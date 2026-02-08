@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Operador.master.cs" Inherits="Shared_Operador" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="estilostelerik.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+.auto-style1 {
+	margin-top: 0px;
+}
+</style>
+
+     <script language="javascript">
+        function MouseRollover(MyImage,over_image) {
+            MyImage.src = "../MetroImages/" + over_image;
+        }
+        function MouseOut(MyImage,out_image) {
+            MyImage.src = "../MetroImages/" + out_image;
+        }
+
+        function changeImage()
+        {
+            alert(document.getElementById("img_clientes").src);
+            document.getElementById("img_clientes").src = "../MetroImages/Clientes_click.png";
+            alert(document.getElementById("img_clientes").src);
+
+        }
+    </script>
+	</head>
+
+<body style='text-align:center'>
+ 
+<div id="outerWrapper">            
+ <div id="wrapper" class="page">
+  <%
+    List<Concretec.Pedidos.BE.Usuario> Login = new List<Concretec.Pedidos.BE.Usuario>();
+    Login = (List<Concretec.Pedidos.BE.Usuario>)Session["DatosUsuario"];
+     
+    
+%>	
+ <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+  <tr>
+	<td style="width:50px;text-align:center">
+        <a href="../Views/LogOff.aspx">  <img src="../MetroImages/Logout.png" width="24" height="24" /></a>
+    </td>
+	<td style="font-size: x-large;width:auto;text-align:center;vertical-align:top;"><p align="center">
+		<h1 class="auto-style1"><b>Programación de Pedidos</b></h1></p>
+	</td>
+	<td style="width:150px;text-align:right"><asp:Label ID="lblusuario" runat="server" ></asp:Label>
+       <h4> <%=" " + Login[0].Nombre + " " + Login[0].APaterno %> </h4>
+  	</td>
+  </tr>
+</table>
+	  
+ <div class="header">
+    <a href="../Views/ListaClientes.aspx">  <img id="img_clientes" src="../MetroImages/Clientes.png" width="75" height="75" onMouseOver="MouseRollover(this,'Clientes_over.png')" onMouseOut="MouseOut(this,'Clientes.png')" /></a>
+	<a href="../Views/ListaObras.aspx">     <img id="img_obras"    src="../MetroImages/ObrasHeader.png" width="75" height="75" onMouseOver="MouseRollover(this,'Obras_Over.png')" onMouseOut="MouseOut(this,'ObrasHeader.png')"/></a>
+    <a href="../Views/ListaPedidos.aspx">   <img id="img_peddidos" src="../MetroImages/ProgramacionHeader.png" width="75" height="75" onMouseOver="MouseRollover(this,'Programacion_Over.png')" onMouseOut="MouseOut(this,'ProgramacionHeader.png')"/></a>
+    <a href="../Views/ListaProductos.aspx"> <img id="img_productos" src="../MetroImages/productosHeader.png" width="75" height="75" onMouseOver="MouseRollover(this,'productos_over.png')" onMouseOut="MouseOut(this,'productosHeader.png')"/></a>
+    <a href="../Views/ListaPlantas.aspx">   <img id="img_plantas" src="../MetroImages/PlantasHeader.png" width="75" height="75" onMouseOver="MouseRollover(this,'Plantas_Over.png')" onMouseOut="MouseOut(this,'PlantasHeader.png')"/></a>
+	<a href="../Views/ListaUnidades.aspx">  <img id="img_uniaddes" src="../MetroImages/UnidadesHeader.png" width="75" height="75" onMouseOver="MouseRollover(this,'Unidades_Over.png')" onMouseOut="MouseOut(this,'UnidadesHeader.png')"/></a>
+    <a href="../Views/HomeReportes.aspx">   <img id="img_reportes" src="../MetroImages/ReportesHeader.png" width="75" height="75" onMouseOver="MouseRollover(this,'Reportes_Over.png')" onMouseOut="MouseOut(this,'ReportesHeader.png')"/></a>
+    <a href=<%="Planeacion.aspx?Fecha=" + DateTime.Now.ToShortDateString() %> target=_blank><img id="img_planeacion" src="../MetroImages/PlaneacionHeader.png" width="77" height="75" onMouseOver="MouseRollover(this,'Planeacion_Over.png')" onMouseOut="MouseOut(this,'PlaneacionHeader.png')" />  </a>
+    
+</div>
+
+  <asp:ContentPlaceHolder ID="MainContent" runat="server" >
+    </asp:ContentPlaceHolder>
+	<p>&nbsp;</p>
+ </div>
+		</div>   
+	
+    <p>
+&nbsp;</p>
+
+</body>
+</html>

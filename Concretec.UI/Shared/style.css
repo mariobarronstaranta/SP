@@ -1,0 +1,4156 @@
+﻿.foo {
+}
+/* First line is here b/c validators don't like the css file to start with a comment
+*
+*  Remove #newMaster as we start moving forward with the new master css.
+*  Search for #remove to find elements that need to be removed after migration
+*
+
+*/
+/**** START OLD MASTER.css *****/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #353535;
+    background-color: #E0E0E0;
+}
+
+p {
+    margin-bottom: 18px;
+    line-height: 14px;
+}
+
+    p.moreLink {
+        margin-bottom: 0;
+    }
+
+a, a:visited {
+    color: #353535;
+    text-decoration: underline;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a img {
+        border: none;
+        outline: 0;
+    }
+
+.clearBoth {
+    clear: both;
+    height: 1px;
+    line-height: 0;
+    overflow: hidden;
+}
+
+body h1 {
+    clear: left;
+    font-size: 26px;
+    font-weight: normal;
+    color: #1390bd;
+    padding-bottom: 8px;
+}
+
+body * + h1 {
+    margin-top: 24px;
+}
+
+body .shareButtonTopRight + h1 {
+    margin-top: 0;
+}
+
+.contentWrapper > h1 {
+    margin-left: 25px;
+    margin-top: 28px;
+    position: relative;
+}
+
+h2 {
+    color: #1390bd;
+    font-size: 18px;
+    padding-bottom: 0px;
+    line-height: 0px;
+    letter-spacing: -0.25px;
+}
+
+.contentWrapper * + h20 {
+    margin-top: 25px;
+}
+
+.contentWrapper .hr + h2,
+.contentWrapper .hrSmColumn + h2 {
+    margin-top: 15px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+select {
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    color: #353535;
+}
+
+ul {
+    margin: 0 0 17px 25px;
+}
+
+    ul.noIndent {
+        margin-left: 15px;
+    }
+
+ol {
+    margin: 0 0 17px 22px;
+}
+
+    ul li,
+    ol li {
+        margin-bottom: 13px;
+        line-height: 14px;
+    }
+
+        ul li ul,
+        ol li ul,
+        ul li ol,
+        ol li ol {
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+
+.linkList {
+    list-style: none;
+    margin: 0;
+}
+
+    .linkList li.moreLink {
+        padding-top: 20px;
+    }
+
+    .linkList li p {
+        padding-bottom: 0;
+    }
+
+    .linkList .title {
+    }
+
+.boldTitles .title {
+    font-weight: bold;
+}
+
+.introContent p {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+
+.hrSmColumn,
+.hrFullWidth {
+    height: 1px;
+    width: 100%;
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/100-percent-width-gradient-bar-horiz.jpg') top center no-repeat;
+    clear: both;
+    overflow: hidden;
+}
+
+.hrSmColumn {
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/hr-gradient-sm-column.jpg') top center no-repeat;
+    margin-top: 20px;
+    margin-bottom: 19px;
+}
+
+.hrFullWidth {
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/100-percent-width-gradient-bar-horiz.jpg') top center no-repeat;
+    margin-bottom: 7px;
+}
+
+.hr {
+    height: 1px;
+    width: 100%;
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/100-percent-width-gradient-bar-horiz.jpg') 0 0 no-repeat;
+    clear: both;
+    margin-bottom: 7px;
+    position: relative;
+}
+
+    .hr img,
+    .hr_xl img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+.hr_xl {
+    height: 1px;
+    width: 100%;
+    background: #B3B3B3 url('http://www.microsoft.com/global/windowsazure/PublishingImages/xl-hr-gradient-bar-bkgd.jpg') 0 0 no-repeat;
+    clear: both;
+    margin-bottom: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.subheadWithHr {
+    width: 100%;
+    height: 20px;
+    margin-top: 12px;
+}
+
+    .subheadWithHr .hr {
+        float: left;
+        clear: none;
+        margin: 10px 0 0 5px;
+    }
+
+    .subheadWithHr h2 {
+        float: left;
+        padding-bottom: 0;
+    }
+
+
+div.vr {
+    width: 1px;
+    min-height: 195px;
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/vr-gradient-bottom.jpg') left bottom no-repeat;
+    position: relative;
+    margin-top: 14px;
+}
+
+    div.vr img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    div.vr div {
+        width: 1px;
+        height: 122px;
+        background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/vr-gradient-top.jpg') 0 0 no-repeat;
+    }
+
+
+h1 .rssLink {
+    padding-left: 7px;
+    position: relative;
+    top: -7px;
+}
+
+h2 .rssLink {
+    padding-left: 7px;
+}
+
+
+
+/* header styles */
+.mainHomepageTitle {
+    width: 403px;
+    height: 52px;
+    display: block;
+    margin: 0px 0 14px;
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/windows-azure-platform-headline.gif') top left no-repeat;
+    text-indent: -999em;
+    outline: 0;
+    /*margin:				-23px 0 51px 0;*/
+}
+
+a.mainHomepageTitle img {
+    display: none;
+}
+
+.mscomLinks {
+    height: 25px;
+    margin: 0 auto;
+    color: #ffffff;
+    display: none;
+}
+
+    .mscomLinks a,
+    .mscomLinks a:visited {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+        .mscomLinks a:hover {
+            text-decoration: underline;
+        }
+
+    .mscomLinks .leftLink {
+        display: none;
+    }
+
+    .mscomLinks .rightLinks {
+        float: right;
+        list-style: none;
+        margin: 0;
+        color: #ffffff;
+    }
+
+        .mscomLinks .rightLinks li {
+            float: left;
+            height: 15px;
+            padding-top: 1px;
+            margin-bottom: 0;
+            color: #ffffff;
+        }
+
+            .mscomLinks .rightLinks li.locale {
+                border-right: 1px solid #ffffff;
+                margin-right: 10px;
+                padding-right: 10px;
+                color: #ffffff;
+            }
+
+
+/* bing search styles */
+.searchWrapper {
+    height: 25px;
+    padding-top: 2px;
+    float: right;
+    width: 400px;
+    margin-top: 15px;
+}
+
+.searchForm {
+    width: 362px;
+    margin-left: auto;
+}
+
+#searchField {
+    font-size: 12px;
+    width: 300px;
+    height: 19px;
+    padding: 3px 8px 0 8px;
+    background-color: #FFFFFF;
+    color: #929292;
+    border: 1px solid #b9e3f0;
+    float: left;
+}
+
+#mscomSearchButton {
+    margin-left: -22px;
+    margin-top: 2px;
+}
+
+#webSearchButton {
+    float: right;
+    margin-top: 2px;
+}
+
+
+
+#searchField.active {
+    font-style: normal;
+    background-image: none;
+}
+
+
+/* background/gradient layout styles */
+#wrapper,
+.logoLinkAndSearchWrapper,
+#whiteBkgdStrip,
+.footer {
+    width: 1024px;
+}
+
+#outerWrapper {
+
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.contentWrapper {
+    z-index: 20;
+    margin-top: 10px;
+    position: relative;
+}
+
+#wrapper {
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    height: 100%;
+    text-align: left;
+}
+
+#whiteBkgdStrip {
+    background-color: #FFFFFF;
+    height: 1300px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.header {
+    padding-top: 9px;
+    position: relative;
+    background-image: url(../Imagenes/Fondo.png);
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+.footer {
+    margin: 0 auto;
+    z-index: 30;
+    width: 1300px;
+}
+
+    .footer div {
+        color: #1390BD;
+        margin: 0 10px 0 25px;
+    }
+
+    .footer a,
+    .footer a:visited {
+        color: #1390BD;
+        text-decoration: none;
+    }
+
+    .footer .leftSideLinks {
+        padding-top: 5px;
+    }
+
+    .footer .microsoftLink {
+        float: right;
+        padding: 24px 28px 0 0;
+    }
+
+        .footer .microsoftLink a {
+            display: block;
+            width: 114px;
+            height: 20px;
+            margin-bottom: 6px;
+        }
+
+.searchWrapper .search-box input[type=text] {
+    width: 250px;
+    margin: 0px;
+    float: right;
+    padding: 2px;
+    color: Gray;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    height: 16px;
+}
+
+.searchWrapper .search-box input[type=image] {
+    float: right;
+}
+
+.bullets {
+    list-style: disc outside none;
+    margin-left: 12px;
+}
+
+.linospace {
+    margin-bottom: 20px;
+}
+
+    .linospace li {
+        margin-bottom: 0;
+        margin-left: 12px;
+    }
+
+.offerPopup {
+    background-color: #FFFFFF;
+    float: left;
+}
+
+/**** END OLD MASTER *****/
+
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+html, body, #outerWrapper {
+    height: 100%;
+}
+
+    body > #outerWrapper {
+        height: auto;
+        min-height: 100%;
+    }
+
+#wrapper {
+    padding-bottom: 95px;
+}
+/* must be same height as the footer */
+
+.footer {
+    position: relative;
+    clear: both;
+    margin-top: -95px; /* negative value of footer height */
+    height: 95px;
+}
+
+/* CLEAR FIX*/
+#wrapper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#wrapper {
+    display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html #wrapper {
+    height: 1%;
+}
+
+#wrapper {
+    display: block;
+}
+/* End hide from IE-mac */
+/*** END STICKY FOOTER ***/
+
+/*** BODY.css ***/
+.landingPage .leftSideContent {
+    float: left;
+    padding-top: 24px;
+}
+
+.landingPage .rightSideContent {
+    float: right;
+    padding-top: 24px;
+}
+
+.landingPage .featuredImage {
+    margin-bottom: 12px;
+    border: 1px solid #A9A9A9;
+    width: 399px;
+    height: 256px;
+}
+
+
+.graphicNumberedList {
+    list-style: none;
+    margin: 0;
+}
+
+p + .graphicNumberedList {
+    padding-top: 12px;
+}
+
+.graphicNumberedList li {
+    padding-left: 45px;
+    border-bottom: 1px solid #9a9a9a;
+    margin-bottom: 9px;
+}
+
+    .graphicNumberedList li.lastItem {
+        border-bottom: none;
+    }
+
+.graphicNumberedList h1 {
+    color: #66d324;
+    font-size: 16px;
+    padding-bottom: 4px;
+    float: left;
+    width: 290px;
+}
+
+.graphicNumberedList p {
+}
+
+.graphicNumberedList h1,
+.graphicNumberedList p {
+}
+
+.graphicNumberedList img {
+    float: left;
+    margin-left: -45px;
+}
+
+
+
+
+.logoLinkList {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+    .logoLinkList li {
+        margin-bottom: 10px;
+    }
+
+.allItemsList li p {
+    padding-bottom: 15px;
+}
+
+.linkList .source,
+.allItemsList .source {
+    font-style: italic;
+}
+
+.linkList .date,
+.allItemsList .date {
+    line-height: 18px;
+}
+
+.allItemsList .postTitle,
+.allItemsList .title {
+    font-weight: bold;
+}
+
+
+/* general column layout styles */
+.genericInnerWrapper {
+    padding: 18px 25px 0 25px;
+    margin-bottom: 20px;
+}
+
+
+.twoColWrapper_40_60,
+.twoColWrapper_50_50,
+.twoColWrapper_70_30,
+.twoColWrapper_30_70,
+.twoColWrapper_80_20,
+.threeColWrapper,
+.fourColWrapper,
+.genericInnerWrapper {
+}
+
+.col01, .col02, .col03, .col04 {
+}
+
+.twoColWrapper_50_50 > .col01,
+.twoColWrapper_40_60 > .col01,
+.twoColWrapper_30_70 > .col01,
+.twoColWrapper_70_30 > .col01,
+.twoColWrapper_80_20 > .col01 {
+    float: left;
+    padding: 18px 27px 0 0;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.twoColWrapper_50_50 > .col02,
+.twoColWrapper_40_60 > .col02,
+.twoColWrapper_30_70 > .col02,
+.twoColWrapper_70_30 > .col02,
+.twoColWrapper_80_20 > .col02 {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    padding: 18px 0 0 0;
+}
+
+.twoColWrapper_70_30 > .col02,
+.twoColWrapper_80_20 > .col02 {
+    padding-top: 29px;
+}
+
+.twoColWrapper_50_50 + .twoColWrapper_50_50 div,
+.twoColWrapper_40_60 + .twoColWrapper_40_60 div,
+.twoColWrapper_30_70 + .twoColWrapper_30_70 div,
+.twoColWrapper_70_30 + .twoColWrapper_70_30 div {
+    background: none;
+    padding-top: 0;
+}
+
+
+.twoColWrapper_40_60 > .col01 {
+    width: 350px;
+}
+
+.twoColWrapper_40_60 > .col02 {
+    width: 505px;
+}
+
+.twoColWrapper_50_50 > .col01 {
+    width: 45%;
+    padding-right: 21px;
+}
+
+.twoColWrapper_50_50 > .col02 {
+    width: 45%;
+}
+
+.col01 .twoColWrapper_50_50 .col01,
+.col02 .twoColWrapper_50_50 .col01 {
+    width: 45%;
+    margin-left: 0;
+}
+
+.col01 .twoColWrapper_50_50 .col02,
+.col02 .twoColWrapper_50_50 .col02 {
+    width: 47%;
+}
+
+
+.twoColWrapper_70_30 > .col01 {
+    width: 560px;
+}
+
+.twoColWrapper_70_30 > .col02 {
+    width: 260px;
+}
+
+.twoColWrapper_30_70 > .col01 {
+    width: 257px;
+}
+
+.twoColWrapper_30_70 > .col02 {
+    width: 566px;
+}
+
+.twoColWrapper_80_20 > .col01 {
+    width: 633px;
+}
+
+.twoColWrapper_80_20 > .col02 {
+    width: 182px;
+}
+
+/* nested two column layouts */
+.col01 .twoColWrapper_40_60 .col01,
+.col01 .twoColWrapper_50_50 .col01,
+.col01 .twoColWrapper_70_30 .col01,
+.col01 .twoColWrapper_30_70 .col01,
+.col01 .twoColWrapper_80_20 .col01,
+.col02 .twoColWrapper_40_60 .col01,
+.col02 .twoColWrapper_50_50 .col01,
+.col02 .twoColWrapper_70_30 .col01,
+.col02 .twoColWrapper_30_70 .col01,
+.col02 .twoColWrapper_80_20 .col01 {
+    margin-left: 0;
+}
+
+.col01 .twoColWrapper_40_60 .col02,
+.col01 .twoColWrapper_50_50 .col02,
+.col01 .twoColWrapper_70_30 .col02,
+.col01 .twoColWrapper_30_70 .col02,
+.col01 .twoColWrapper_80_20 .col02,
+.col02 .twoColWrapper_40_60 .col02,
+.col02 .twoColWrapper_50_50 .col02,
+.col02 .twoColWrapper_70_30 .col02,
+.col02 .twoColWrapper_30_70 .col02,
+.col02 .twoColWrapper_80_20 .col02 {
+    margin-right: 0;
+}
+
+
+
+.threeColWrapper .col01 {
+    padding-right: 28px;
+    float: left;
+    padding-top: 18px;
+    margin-left: 25px;
+}
+
+.threeColWrapper .col02 {
+    padding-left: 25px;
+    float: left;
+    padding-top: 18px;
+    padding-right: 24px;
+}
+
+.threeColWrapper .col03 {
+    padding-left: 25px;
+    float: left;
+    padding-top: 18px;
+    margin-right: 25px;
+}
+
+.threeColWrapper .col01 {
+    width: 253px;
+}
+
+.threeColWrapper .col02 {
+    width: 257px;
+}
+
+.threeColWrapper .col03 {
+    width: 257px;
+}
+
+
+/* Nested three column wrapper */
+.col01 .threeColWrapper .col01,
+.col02 .threeColWrapper .col01 {
+    width: 27%;
+    margin-left: 0;
+}
+
+.col01 .threeColWrapper .col02,
+.col02 .threeColWrapper .col02 {
+    width: 27%;
+}
+
+.col01 .threeColWrapper .col03,
+.col02 .threeColWrapper .col03 {
+    width: 27%;
+    margin-right: 0;
+}
+
+
+.fourColWrapper {
+    padding: 0 25px;
+}
+
+    .fourColWrapper .col01,
+    .fourColWrapper .col02,
+    .fourColWrapper .col03,
+    .fourColWrapper .col04 {
+        float: left;
+        margin-bottom: 20px;
+        width: 186px;
+        padding: 18px 20px 0 22px;
+    }
+
+    .fourColWrapper .col01 {
+        padding-left: 0;
+    }
+
+    .fourColWrapper .col04 {
+        padding-right: 0;
+        width: 182px;
+    }
+
+    .fourColWrapper .imgHeader {
+        margin-bottom: 15px;
+    }
+
+/* Video popups on product overview pages */
+.thumbWrapper {
+}
+
+    .thumbWrapper .videoThumb {
+        border: 1px solid #A6A6A6;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .thumbWrapper a.caption {
+        text-decoration: none;
+        font-style: italic;
+    }
+
+.popupVideo {
+    display: none;
+}
+
+.adserve {
+    display: none;
+}
+/* END body.css */
+
+/*
+ * FancyBox - jQuery Plugin
+ * Simple and fancy lightbox alternative
+ *
+ * Examples and documentation at: http://fancybox.net
+ * 
+ * Copyright (c) 2008 - 2010 Janis Skarnelis
+ *
+ * Version: 1.3.1 (05/03/2010)
+ * Requires: jQuery v1.3+
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+
+/*#fancybox-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1104;
+    display: none;
+}
+
+* html #fancybox-loading { /* IE6 */
+    position: absolute;
+    margin-top: 0;
+}
+
+    #fancybox-loading div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 480px;
+
+    }
+
+#fancybox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    z-index: 1100;
+    display: none;
+}
+
+* html #fancybox-overlay { /* IE6 */
+    position: absolute;
+    width: 100%;
+}
+
+#fancybox-tmp {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: auto;
+    display: none;
+}
+
+#fancybox-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px;
+    z-index: 1101;
+    display: none;
+}
+
+#fancybox-outer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+
+#fancybox-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+}
+
+#fancybox-hide-sel-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+#fancybox-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background-position: -40px 0px;
+    cursor: pointer;
+    z-index: 1103;
+    display: none;
+}
+
+#fancybox_error {
+    color: #444;
+    font: normal 12px/20px Arial;
+    padding: 7px;
+    margin: 0;
+}
+
+#fancybox-content {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#fancybox-img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    line-height: 0;
+    vertical-align: top;
+    -ms-interpolation-mode: bicubic;
+}
+
+#fancybox-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+#fancybox-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    z-index: 1102;
+}
+
+.fancybox-title-inside {
+    padding: 10px 0;
+    text-align: center;
+    color: #333;
+}
+
+.fancybox-title-outside {
+    padding-top: 5px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fancybox-title-over {
+    color: #FFF;
+    text-align: left;
+}
+
+#fancybox-title-over {
+    padding: 10px;
+    display: block;
+}
+
+#fancybox-title-wrap {
+    display: inline-block;
+}
+
+    #fancybox-title-wrap span {
+        height: 32px;
+        float: left;
+    }
+
+#fancybox-title-left {
+    padding-left: 15px;
+    background-position: -40px -90px;
+    background-repeat: no-repeat;
+}
+
+#fancybox-title-main {
+    font-weight: bold;
+    line-height: 29px;
+    background-position: 0px -40px;
+    color: #FFF;
+}
+
+#fancybox-title-right {
+    padding-left: 15px;
+    background-position: -55px -90px;
+    background-repeat: no-repeat;
+}
+
+#fancybox-left, #fancybox-right {
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    width: 35%;
+    cursor: pointer;
+    outline: none;
+    z-index: 1102;
+    display: none;
+}
+
+#fancybox-left {
+    left: 0px;
+}
+
+#fancybox-right {
+    right: 0px;
+}
+
+#fancybox-left-ico, #fancybox-right-ico {
+    position: absolute;
+    top: 50%;
+    left: -9999px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    cursor: pointer;
+    z-index: 1102;
+    display: block;
+}
+
+
+#fancybox-left:hover, #fancybox-right:hover {
+    visibility: visible; /* IE6 */
+}
+
+    #fancybox-left:hover span {
+        left: 20px;
+    }
+
+    #fancybox-right:hover span {
+        left: auto;
+        right: 20px;
+    }
+
+.fancy-bg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 1001;
+}
+
+#fancy-bg-n {
+    top: -20px;
+    left: 0;
+    width: 100%;
+    
+}
+
+
+
+#fancy-bg-e {
+    top: 0;
+    right: -20px;
+    height: 100%;
+    
+    background-position: -20px 0px;
+}
+
+#fancy-bg-se {
+    bottom: -20px;
+    right: -20px;
+    
+    background-position: -40px -182px;
+}
+
+
+
+
+#fancy-bg-w {
+    top: 0;
+    left: -20px;
+    height: 100%;
+
+}
+
+
+/* IE */
+
+#fancybox-loading.fancybox-ie div {
+    background: transparent;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_loading.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-close {
+    background: transparent;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_close.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-title-over {
+    background: transparent;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_title_over.png', sizingMethod='scale');
+    zoom: 1;
+}
+
+.fancybox-ie #fancybox-title-left {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_title_left.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-title-main {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_title_main.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-title-right {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1//fancy_title_right.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-left-ico {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_nav_left.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancybox-right-ico {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_nav_right.png', sizingMethod='scale');
+}
+
+.fancybox-ie .fancy-bg {
+    background: transparent !important;
+}
+
+.fancybox-ie #fancy-bg-n {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_shadow_n.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancy-bg-ne {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_shadow_ne.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancy-bg-e {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_shadow_e.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancy-bg-se {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_shadow_se.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancy-bg-s {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_shadow_s.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancy-bg-sw {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_shadow_sw.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancy-bg-w {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_shadow_w.png', sizingMethod='scale');
+}
+
+.fancybox-ie #fancy-bg-nw {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.microsoft.com/global/windowsazure/RenderingAssets/jquery.fancybox-1.3.1/fancy_shadow_nw.png', sizingMethod='scale');
+}
+
+/*END FANCY BOX */*/
+
+/* NEW MASTER STYLES */
+#newMaster {
+    font-family: 'Segoe UI', Verdana, Arial, Helvetica, sans-serif;
+    line-height: 21px !important; /* #remove !important */
+    font-size: 14px;
+    color: #353535;
+}
+
+    /* #remove entire element*/
+    #newMaster ul li {
+        line-height: 21px !important;
+    }
+/* end remove */
+
+/* layouts */
+#newMaster {
+    overflow: hidden;
+}
+
+a {
+    outline: 0 !important;
+}
+
+#left8020 {
+    float: left;
+    width: 605px;
+}
+
+#right8020 {
+    float: right;
+    width: 250px;
+}
+/*         */
+
+#newMaster a {
+    text-decoration: none;
+    color: #005FB7;
+}
+
+#newMaster img.inpage {
+    width: 100%;
+    margin: 0 0 15px 0;
+    display: block;
+}
+
+#newMaster p, #newMaster ul, #newMaster ol, #newMaster h1, #newMaster h2, #newMaster h3, #newMaster h4, #newMaster h5, #newMaster h6, #newMaster img, #newMaster table {
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+    #newMaster p.caption {
+        text-align: center;
+        font-size: 12px;
+        color: #7f7f7f;
+        margin-top: -10px;
+    }
+
+    #newMaster ul ul, #newMaster ol ol {
+        padding-bottom: 0;
+    }
+
+#newMaster li {
+    margin: 0 0 0 40px;
+    list-style: disc outside none;
+}
+
+#newMaster ul.arrow li {
+    list-style: none inside none;
+    margin: 0 0 7px 20px;
+    padding: 0 0 0 20px;
+    background: transparent url(../../PublishingImages/Common/arrow.png) 0px 5px no-repeat;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+    #newMaster ul.arrow li:hover {
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        -o-transition: all .1s ease-in-out;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        background: transparent url(../../PublishingImages/Common/arrow.png) 3px 5px no-repeat;
+    }
+
+#newMaster ol > li {
+    list-style: decimal outside none;
+    line-height: 21px;
+}
+
+#newMaster h1, #newMaster h2, #newMaster h3, #newMaster h4, #newMaster h5, #newMaster h6 {
+    color: #1390BD;
+    font-size: 100%;
+}
+
+#newMaster h1 {
+    font-size: 36px;
+    line-height: 38px !important;
+    font-weight: normal;
+    padding-bottom: 7px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+}
+
+#newMaster h2 {
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.1);
+}
+
+#newMaster p a, #newMaster ul a {
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+}
+
+    #newMaster p a:hover, #newMaster ul a:hover {
+        border-bottom: 1px solid #888;
+    }
+
+#newMaster table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin: 0 auto 15px auto;
+    font-size: 12px;
+}
+
+#newMaster td, #newMaster th {
+    padding: 5px;
+    margin: 4px;
+    text-align: center;
+}
+
+#newMaster th {
+    background: #0e6485 url(../../PublishingImages/Common/cellGradientLight.png) top left repeat-x;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.4);
+}
+
+#newMaster td {
+    border: 1px solid #ccc;
+}
+
+#newMaster tr {
+    background: #fff url(../../PublishingImages/Common/cellGradient.png) top left repeat-x;
+}
+
+/* Manual Zebrastripes */
+#newMaster .odd {
+    background-color: #f1f1f1;
+}
+/*Auto Zebrastripes 
+#newMaster tr:nth-child(odd){
+	background-color:#f1f1f1;
+}
+*/
+
+.sub-box-container {
+    overflow: hidden;
+}
+
+.sub-box {
+    float: left;
+    width: 179px;
+    padding: 7px;
+    margin-right: 5px;
+    border: 1px solid #e4e4e4;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff url(../../PublishingImages/Common/cellGradient.png) top left repeat-x;
+}
+
+    .sub-box p {
+        display: table-cell;
+        min-height: 74px;
+        vertical-align: middle;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .sub-box a {
+        display: block;
+        width: 179px;
+        height: 38px;
+        margin: 0 auto 0 auto;
+        line-height: 38px;
+        font-weight:16px;
+        background: transparent url(../../PublishingImages/Common/bg-sub-box.png) top center no-repeat;
+        text-decoration: none;
+        color: #fff !important;
+        text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+    }
+
+        .sub-box a:hover {
+            background-position: bottom center;
+            color: #fff !important;
+        }
+
+.last-sub {
+    margin-right: 0;
+}
+
+/*** Matted Background Styles ***/
+
+.matt-bg {
+    background: transparent url(../../PublishingImages/Common/matt.png) repeat top left;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+    .matt-bg .matt-inside-bg {
+        background: #fff url(../../PublishingImages/Common/matt.png) repeat bottom left;
+        padding: 10px;
+        width: 851px;
+        float: left;
+    }
+
+/*** Three button row ***/
+ul.btn-three-row {
+    padding: 0 0 15px 0 !important;
+    margin: 0!important;
+    float: left;
+}
+
+.btn-three-row li {
+    float: left;
+    display: block;
+    height: 96px;
+    margin-right: 0px !important; /* #remove important */
+    text-align: center;
+    outline: 0;
+    margin-left: 0 !important; /* #remove important */
+}
+
+    .btn-three-row li a {
+        display: block;
+        vertical-align: middle;
+        height: 72px;
+        width: 245px;
+        padding: 0px 24px 18px 19px;
+        background: transparent url("../../PublishingImages/Common/btn-sub-box.png") bottom center no-repeat;
+        color: black;
+        text-decoration: none;
+        outline: 0;
+        border: 0px !important;
+        color: black !important;
+    }
+
+.btn-three-row span {
+    display: block;
+}
+
+.btn-three-row li a:hover {
+    background-position: top center;
+}
+
+#newMaster .btn-three-row h4, .btn-three-row p { /* #remove newmaster */
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.07);
+}
+
+#newMaster .btn-three-row h4 { /* #remove newmaster */
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.spacing-hr {
+    background: transparent none top left repeat-x; /*url("../../PublishingImages/Common/diag.png")*/
+    height: 7px;
+    width: 100%;
+    margin: 25px 0 30px 0;
+    clear: both;
+    float: left;
+}
+
+ol.toc ul, ol.toc ol, ol.toc li {
+    margin-bottom: 4px !important;
+    list-style-type: none !important;
+}
+
+#newMaster .footnote {
+    display: block;
+    height: auto;
+    width: 100%;
+    color: #595959;
+    font-size: .7em;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    clear: both;
+    border-top: 1px solid #ccc;
+}
+
+    #newMaster .footnote .script {
+        line-height: 12px;
+    }
+
+#newMaster p.code {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+#newMaster .figure {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+#newMaster .contentToggle {
+    display: inline;
+    border-bottom: none;
+}
+
+#newMaster a.contentToggle:hover {
+    border: 0 !important;
+}
+
+#newMaster #downloadButton {
+    margin-left: 20px;
+    float: right;
+}
+
+#newMaster .newExpandoItem {
+    background-position: 0px 0px;
+}
+
+#newMaster .newExpandoItem {
+    background-position: 0px 0px;
+    line-height: 21px;
+}
+
+    #newMaster .newExpandoItem .newContent {
+        margin-top: 5px;
+    }
+
+#newMaster .expandoList .links {
+    border-bottom: 1px #ccc solid;
+}
+
+#newMaster .toc > li {
+    margin-left: 0px;
+}
+
+#newMaster .offsiteLink {
+    float: left;
+    padding-right: 5px;
+}
+
+#languageHolder {
+    float: left;
+    margin-left: -80px;
+    padding-top: 3px;
+}
+
+#search-box {
+    float: right;
+}
+
+/*** topnav.css ***/
+ul.AspNet-Menu {
+    position: relative;
+}
+
+
+    ul.AspNet-Menu,
+    ul.AspNet-Menu ul {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+        ul.AspNet-Menu li {
+            position: relative;
+            list-style: none;
+            float: left;
+        }
+
+            ul.AspNet-Menu li a,
+            ul.AspNet-Menu li span {
+                display: block;
+                text-decoration: none;
+            }
+
+        ul.AspNet-Menu ul {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        /* Add more rules here if your menus have more than three (3) tiers */
+        ul.AspNet-Menu li:hover ul ul,
+        ul.AspNet-Menu li.AspNet-Menu-Hover ul ul {
+            visibility: hidden;
+        }
+
+        /* Add more rules here if your menus have more than three (3) tiers */
+        ul.AspNet-Menu li:hover ul,
+        ul.AspNet-Menu li li:hover ul,
+        ul.AspNet-Menu li li li:hover ul,
+        ul.AspNet-Menu li.AspNet-Menu-Hover ul,
+        ul.AspNet-Menu li li.AspNet-Menu-Hover ul,
+        ul.AspNet-Menu li li li.AspNet-Menu-Hover ul {
+            visibility: visible;
+        }
+
+.AspNet-Menu-Vertical ul.AspNet-Menu li {
+    width: 100%;
+}
+
+
+.AspNet-Menu-Horizontal {
+    position: absolute;
+    height: 32px;
+    z-index: 1000;
+    width: 690px;
+}
+
+ul.AspNet-Menu {
+    height: 32px;
+}
+
+    ul.AspNet-Menu li {
+        margin-bottom: 0;
+    }
+
+        ul.AspNet-Menu li a {
+            font-weight: normal;
+        }
+
+        ul.AspNet-Menu li li a {
+            font-weight: normal;
+        }
+        /*Left side Rounded Corner*/
+
+        ul.AspNet-Menu li:first-child a {
+            background-position: 0 -165px !important;
+        }
+
+#leftMenu.active {
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/nav/menu-sprite.png') 0 -231px no-repeat;
+}
+
+ul.AspNet-Menu li:first-child:hover a {
+    background-position: 0 -198px !important;
+}
+
+
+/* tier 1 nav */
+ul.AspNet-Menu li.AspNet-Menu-WithChildren > a,
+ul.AspNet-Menu li.AspNet-Menu-Leaf > a {
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/nav/menu-sprite.png') 0 -99px no-repeat;
+    width: 113px;
+    height: 25px;
+    padding-top: 8px;
+    text-align: center;
+    margin-right: 2px;
+    font-size: 14px;
+    color: #FFFFFF;
+    outline: none;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren + li > a,
+ul.AspNet-Menu li.AspNet-Menu-Leaf + li > a {
+    border-left: none;
+}
+
+ul.AspNet-Menu > li.AspNet-Menu-Selected > a,
+ul.AspNet-Menu li.AspNet-Menu-ChildSelected > a {
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/nav/menu-sprite.png') 0 -132px no-repeat;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren > a:hover,
+ul.AspNet-Menu li.AspNet-Menu-Leaf > a:hover,
+ul.AspNet-Menu li.childHover > a {
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/nav/menu-sprite.png') 0 -132px no-repeat;
+    color: #FFFFFF;
+}
+
+
+
+/* tier 2 nav */
+ul.AspNet-Menu li ul {
+    width: 161px;
+    border-top: 1px solid #FFFFFF;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren + li ul,
+ul.AspNet-Menu li.AspNet-Menu-Leaf + li ul {
+    /* left:				-1px; */
+}
+
+ul.AspNet-Menu li ul li {
+    float: none;
+}
+
+ul.AspNet-Menu li.childHover ul {
+    visibility: visible;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-Leaf a,
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren a {
+    /* Override inherited styles from tier 1 .AspNet-Menu-Leaf */
+    background: none;
+    background-color: #639ebf;
+    text-align: left;
+    border: 1px solid #FFFFFF;
+    border-top: none;
+    width: 135px;
+    height: 28px;
+    padding: 10px 0 0 25px;
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: -1px;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-Leaf + li.AspNet-Menu-Leaf a {
+    border-left: 1px solid #ffffff;
+}
+
+/* Item has a child menu */
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren a {
+    background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/nav/nav-tier2-parent-arrow.gif') !important;
+    background-position: 140px 15px !important;
+    background-repeat: no-repeat;
+}
+/* third tier item */
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren li a {
+    background-image: none !important;
+}
+
+/* Current page */
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-Leaf a.AspNet-Menu-Selected,
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren a.AspNet-Menu-Selected,
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected li a.AspNet-Menu-Selected {
+    font-weight: normal;
+    background-color: #1ca7da;
+}
+/* Hover */
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-Leaf a:hover,
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren a:hover,
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected a:hover,
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.childHover li a:hover {
+    background-color: #1ca7da;
+}
+/* Child menu is hovered */
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.childHover a {
+    background-color: #639ebf;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.childHover li a {
+    background-color: #639ebf;
+}
+/* Child menu is current */
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected a {
+    font-weight: normal;
+    background-color: #f3faff;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected a {
+    background-color: #639ebf;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected li.AspNet-Menu-Leaf.AspNet-Menu-Selected a {
+    background-color: #639ebf;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected li.AspNet-Menu-Leaf a {
+    background-color: #639ebf;
+}
+
+    ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected li.AspNet-Menu-Leaf a:hover {
+        background-color: #1ca7da;
+    }
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected li a {
+    background-color: #1ca7da;
+}
+
+/************************
+ * Tier 3 nav flyouts   *
+ ************************/
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren ul ul,
+ul.AspNet-Menu li.AspNet-Menu-Leaf ul ul {
+    left: 161px;
+    top: -1px;
+    border-top: 1px solid #FFFFFF;
+}
+
+ul.AspNet-Menu li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren ul a {
+    background-image: none;
+}
+
+
+
+
+/*Account Support Dropdown Styles*/
+#linkPanelContainer {
+    background-image: url(http://www.microsoft.com/global/windowsazure/PublishingImages/accountSupport/link_panel_wide.png);
+    background-position: center bottom;
+    width: 919px;
+    margin-top: -4px;
+    display: none;
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    overflow: auto;
+}
+
+    #linkPanelContainer .close {
+        width: 43px;
+        height: 20px;
+        background: transparent url(http://www.microsoft.com/global/windowsazure/PublishingImages/accountSupport/close_x.gif) no-repeat right top;
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+.close span {
+    color: #1390BD;
+    font-weight: bold;
+}
+
+#linkPanelContainer a {
+    /*text-decoration: none;*/
+    line-height: 19px;
+    outline: none;
+}
+
+#linkPanelContainer #innerContent {
+    padding: 10px;
+}
+
+#innerContent p {
+    color: #a3a3a3;
+}
+
+/*fancybox popups */
+.panelDetail {
+    display: none;
+}
+
+div#fancy_div {
+    color: #353535;
+    background: #FFF;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+}
+
+
+/* Support Links */
+#supportLinks ul {
+    list-style: none;
+    margin: 0;
+}
+
+#supportLinks h2 {
+    font-size: 14px;
+    padding: 0;
+}
+
+#linkPanelContainer #supportLinks a {
+    text-decoration: none;
+}
+
+#supportLinks ul li {
+    padding: 0px;
+    margin: 0px;
+}
+
+#supportLinks .col01, #supportLinks .col02 {
+    width: 45%;
+    float: left;
+}
+
+#supportLinks .col02 {
+    float: right;
+}
+
+/* Account Links */
+#accountLinks {
+    padding: 5px;
+    font-size: 12px;
+}
+
+    #accountLinks h2 {
+        font-size: 14px;
+        padding: 0 0 3px 0;
+    }
+
+    #accountLinks .col01, #accountLinks .col02, #accountLinks .col03 {
+        float: left;
+        width: 30%;
+        padding-left: 20px;
+    }
+
+    #accountLinks .col02 {
+        width: 200px;
+    }
+
+    #accountLinks .col03 {
+        width: 340px;
+    }
+
+    #accountLinks .select {
+        height: 24px;
+        display: block;
+    }
+
+    #accountLinks select {
+        display: block;
+        float: left;
+        margin-top: 4px;
+        line-height: 19px;
+        padding: 1px;
+    }
+
+a#goBtn {
+    background: transparent url("http://www.microsoft.com/global/windowsazure/PublishingImages/accountSupport/goBtn.png") no-repeat left top;
+    margin: 4px 0 0 3px;
+    width: 24px;
+    height: 24px;
+    text-indent: -999em;
+    outline: 0;
+    display: block;
+    float: left;
+    border: 0 !important;
+}
+
+#accountLinks .vr {
+    min-height: 120px;
+}
+
+    #accountLinks .vr div {
+        height: 60px;
+    }
+
+#accountLinks li a, #accountLinks h2 a {
+    border-bottom: #ccc 1px solid;
+    text-decoration: none;
+}
+
+#signin a {
+    float: left;
+    margin-right: 7px;
+}
+
+#singin h2 {
+    float: left;
+    width: 250px;
+}
+
+#accountLinks li a:hover, #accountLinks h2 a:hover {
+    border-bottom: #000 1px solid;
+}
+
+#accountLinks ul, #accountLinks li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#accountLinks li {
+    padding-left: 20px;
+    margin-bottom: 3px;
+    background: transparent url("http://www.microsoft.com/global/windowsazure/PublishingImages/getstarted/arrow.png") no-repeat left center;
+}
+
+
+.linksUnderSearchBox {
+    width: 248px;
+    height: 17px;
+    float: right;
+    text-align: right;
+    margin: 24px 1px 0px 0px;
+    clear: right;
+    padding-right: 0px;
+}
+
+    .linksUnderSearchBox li {
+        height: 33px;
+        float: right;
+        display: block;
+    }
+
+        .linksUnderSearchBox li#accountLink {
+            margin-right: 2px;
+        }
+
+        .linksUnderSearchBox li#supportLink a {
+            background: transparent url(http://www.microsoft.com/global/windowsazure/PublishingImages/nav/menu-sprite.png) 0 -33px no-repeat;
+        }
+
+            .linksUnderSearchBox li#supportLink a.activeSupport, .linksUnderSearchBox li#supportLink a:hover {
+                background: transparent url(http://www.microsoft.com/global/windowsazure/PublishingImages/nav/menu-sprite.png) 0 -66px no-repeat;
+                color: #FFFFFF;
+            }
+
+    .linksUnderSearchBox a {
+        display: block;
+        height: 25px;
+        width: 113px;
+        background: transparent url(http://www.microsoft.com/global/windowsazure/PublishingImages/nav/menu-sprite.png) 0 0 no-repeat;
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 8px;
+        outline: none;
+    }
+
+        .linksUnderSearchBox a:hover, .linksUnderSearchBox a.active {
+            background-position: 0 -132px;
+            color: #FFFFFF;
+        }
+
+/*** END topnav.css ***/
+
+
+/*** LARGE BUTTON STYLE ***/
+.btn-wrap { /* For centering */
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+}
+
+.btn-wrap-btm-pad { /* For bottom padding */
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+a.btn-large, a.btn-large-green, a.btn-large-orange {
+    height: 71px;
+    margin: 10px 0 10px 30px;
+    padding-right: 30px;
+    display: block;
+    float: left;
+    background: transparent url(http://www.microsoft.com/global/windowsazure/PublishingImages/common/btns.png) right top no-repeat;
+    line-height: 65px !important;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    font-size: 22px;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-weight: bold;
+    color: #fff !important;
+    white-space: nowrap;
+    position: relative;
+    left: 50%;
+}
+
+    a.btn-large span, a.btn-large-green span, a.btn-large-orange span {
+        width: 30px;
+        height: 71px;
+        margin-left: -30px;
+        float: left;
+        background: transparent url(http://www.microsoft.com/global/windowsazure/PublishingImages/common/btns.png) left top no-repeat;
+    }
+
+    a.btn-large:hover {
+        background-position: right -71px;
+    }
+
+        a.btn-large:hover span {
+            background-position: left -71px;
+        }
+
+a.btn-large-orange {
+    background-position: right -142px;
+}
+
+    a.btn-large-orange span {
+        background-position: left -142px;
+    }
+
+    a.btn-large-orange:hover {
+        background-position: right -213px;
+    }
+
+        a.btn-large-orange:hover span {
+            background-position: left -213px;
+        }
+
+a.btn-large-green {
+    background-position: right -284px;
+}
+
+    a.btn-large-green span {
+        background-position: left -284px;
+    }
+
+    a.btn-large-green:hover {
+        background-position: right -355px;
+    }
+
+        a.btn-large-green:hover span {
+            background-position: left -355px;
+        }
+
+a.btn-small {
+    display: block;
+    height: 35px;
+    line-height: 31px;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    color: #fff !important;
+    min-width: 80px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: #579137 url(http://www.microsoft.com/global/windowsazure/publishingimages/common/btn-little.png) top left repeat-x;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+    a.btn-small:hover {
+        box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+    }
+
+.btn-wrap a.btn-small {
+    white-space: nowrap;
+    position: relative;
+    left: 50%;
+}
+
+/*** END LARGE BUTTON STYLE ***/
+
+
+/* Specific styles for elements on tier 2 pages */
+.tier2page .allItemsList li {
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+    .tier2page .allItemsList li.clearBoth {
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .tier2page .allItemsList li:first-child {
+        padding-top: 0;
+    }
+
+    .tier2page .allItemsList li p {
+        margin-bottom: 15px;
+        padding-bottom: 0;
+    }
+
+    .tier2page .allItemsList li.hrFullWidth {
+        height: 1px;
+        width: 100%;
+        background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/100-percent-width-gradient-bar-horiz.jpg') top center no-repeat;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tier2page .allItemsList li.hr {
+        margin: 0;
+        padding: 0;
+    }
+
+/* training page */
+.training .genericInnerWrapper p {
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+.training .genericInnerWrapper .contentbox {
+    width: 100%;
+    z-index: 2;
+    padding-left: 20px;
+}
+
+    .training .genericInnerWrapper .contentbox .contentbox-wrapper {
+        width: 870px;
+        border-top: solid 1px #DADADA;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .training .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-mid {
+            width: 870px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+            .training .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-mid .contentbox-w {
+                width: 3px;
+                height: 100%;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_w.jpg');
+                background-repeat: repeat-y;
+                float: left;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .training .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-mid .contentbox-content {
+                width: 864px;
+                height: 100%;
+                float: left;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .training .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-mid .contentbox-e {
+                width: 3px;
+                height: 100%;
+                margin: 0px;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_e.jpg');
+                background-repeat: repeat-y;
+                float: left;
+                padding: 0px;
+            }
+
+        .training .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-bottom {
+            width: 870px;
+            height: 26px;
+            padding: 0px;
+        }
+
+            .training .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-bottom .contentbox-sw {
+                width: 5px;
+                height: 26px;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_southe.jpg');
+                background-repeat: no-repeat;
+                margin: 0px;
+                padding: 0px;
+                clear: right;
+                vertical-align: bottom;
+                float: left;
+            }
+
+            .training .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-bottom .contentbox-s {
+                width: 856px;
+                height: 26px;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_south.jpg');
+                background-repeat: repeat-x;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-left: 0px;
+                margin: 0px;
+                padding: 0px;
+                vertical-align: bottom;
+            }
+
+            .training .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-bottom .contentbox-se {
+                width: 10px;
+                height: 26px;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_southw.jpg');
+                background-repeat: no-repeat;
+                position: relative;
+                bottom: 26px;
+                margin: 0px;
+                padding: 0px;
+                vertical-align: bottom;
+                float: right;
+            }
+
+.training #finderparent {
+    POSITION: relative;
+    HEIGHT: 140px;
+}
+
+.training #finder {
+    POSITION: absolute;
+    TOP: 1em;
+    LEFT: 1em;
+}
+
+.training UL#finder {
+    PADDING-BOTTOM: 0px;
+    LIST-STYLE-TYPE: none;
+    MARGIN: 0px;
+    PADDING-LEFT: 0px;
+    WIDTH: 230px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px;
+}
+
+    .training UL#finder LI {
+        PADDING-BOTTOM: 0px;
+        LIST-STYLE-TYPE: none;
+        MARGIN: 0px;
+        PADDING-LEFT: 0px;
+        WIDTH: 230px;
+        PADDING-RIGHT: 0px;
+        PADDING-TOP: 0px;
+    }
+
+    .training UL#finder UL {
+        PADDING-BOTTOM: 0px;
+        LIST-STYLE-TYPE: none;
+        MARGIN: 0px;
+        PADDING-LEFT: 0px;
+        WIDTH: 230px;
+        PADDING-RIGHT: 0px;
+        PADDING-TOP: 0px;
+    }
+
+        .training UL#finder UL.hidden {
+            POSITION: absolute;
+            TOP: 0px;
+            LEFT: -2000px;
+        }
+
+        .training UL#finder UL.shown {
+            POSITION: absolute;
+            TOP: 0px;
+            LEFT: 230px;
+        }
+
+.training #finder A.open {
+    PADDING-LEFT: 16px;
+    PADDING-RIGHT: 16px;
+    DISPLAY: block;
+    BACKGROUND: url('http://www.microsoft.com/global/windowsazure/PublishingImages/bullet-triangle.png') no-repeat 0% 50%;
+}
+
+.training #finder A.parent {
+    PADDING-LEFT: 16px;
+    PADDING-RIGHT: 16px;
+    BACKGROUND: url('http://www.microsoft.com/global/windowsazure/PublishingImages/bullet-triangle.png') no-repeat 0% 50%;
+}
+
+.training UL#finder LI A {
+    PADDING-LEFT: 16px;
+    BACKGROUND: url('http://www.microsoft.com/global/windowsazure/PublishingImages/bullet-diamond.png') no-repeat 0px 50%;
+    COLOR: #000;
+    TEXT-DECORATION: none;
+}
+
+/* partner page */
+.partner .genericInnerWrapper p {
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+.partner .genericInnerWrapper .contentbox {
+    width: 100%;
+    z-index: 2;
+    padding-left: 0px;
+}
+
+    .partner .genericInnerWrapper .contentbox .contentbox-wrapper {
+        width: 558px;
+        border-top: solid 1px #DADADA;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .partner .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-mid {
+            width: 558px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+            .partner .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-mid .contentbox-w {
+                width: 3px;
+                height: 100%;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_w.jpg');
+                background-repeat: repeat-y;
+                float: left;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .partner .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-mid .contentbox-content {
+                width: 552px;
+                height: 100%;
+                float: left;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .partner .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-mid .contentbox-e {
+                width: 3px;
+                height: 100%;
+                margin: 0px;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_e.jpg');
+                background-repeat: repeat-y;
+                float: left;
+                padding: 0px;
+            }
+
+        .partner .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-bottom {
+            width: 558px;
+            height: 26px;
+            padding: 0px;
+        }
+
+            .partner .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-bottom .contentbox-sw {
+                width: 5px;
+                height: 26px;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_southe.jpg');
+                background-repeat: no-repeat;
+                margin: 0px;
+                padding: 0px;
+                clear: right;
+                vertical-align: bottom;
+                float: left;
+            }
+
+            .partner .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-bottom .contentbox-s {
+                width: 553px;
+                height: 26px;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_south.jpg');
+                background-repeat: repeat-x;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-left: 0px;
+                margin: 0px;
+                padding: 0px;
+                vertical-align: bottom;
+            }
+
+            .partner .genericInnerWrapper .contentbox .contentbox-wrapper .contentbox-bottom .contentbox-se {
+                width: 10px;
+                height: 26px;
+                background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/box_southw.jpg');
+                background-repeat: no-repeat;
+                position: relative;
+                bottom: 26px;
+                margin: 0px;
+                padding: 0px;
+                vertical-align: bottom;
+                float: right;
+            }
+
+/* Override default AddThis button styles */
+#at20mc #at15s #at15s_head,
+#at20mc #at15s #at16pf {
+    display: none;
+}
+
+#at20mc #at15s {
+    width: 240px !important;
+    border: 1px solid #a6a6a6;
+}
+
+#at20mc #at_hover {
+    padding: 12px 8px;
+}
+
+    #at20mc #at_hover .at_item {
+        width: 95px !important;
+    }
+
+    #at20mc #at_hover .at_col1,
+    #at20mc #at_hover .at_colNaN {
+        margin-left: 10px;
+    }
+
+#at_hover .at_item.at_col1.athov,
+#at_hover .at_item.at_colNaN.athov {
+    margin-left: 9px !important;
+}
+
+#at20mc #at15s #at_msg,
+#at20mc #at15s #at16p label,
+#at20mc #at15s #at16nms,
+#at20mc #at15s #at_share .at_item,
+#at20mc #at15s #at16p,
+#at20mc #at15s,
+#at20mc #at15s #at16p form input,
+#at20mc #at15s #at16p form textarea {
+    font-size: 11px !important;
+}
+
+
+
+
+
+
+#AllForumsList .postTitle,
+#AllBlogsList .postTitle {
+    font-weight: bold;
+}
+
+
+.featuredAppBlurb .title {
+    font-weight: bold;
+}
+
+.featuredAppBlurb .description {
+    margin-top: 5px;
+    padding-bottom: 15px;
+}
+
+
+.devs_windowsPage .upperContentWrapper .leftSideContent {
+    width: 400px;
+}
+
+.devs_windowsPage .upperContentWrapper .rightSideContent {
+    float: right;
+    width: 116px;
+}
+
+    .devs_windowsPage .upperContentWrapper .rightSideContent .buttonWrapper a {
+        display: block;
+        width: 116px;
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    .devs_windowsPage .upperContentWrapper .rightSideContent .videoThumbnailColumn {
+        float: none;
+    }
+
+/* Override Meet The Bloggers style since this page has 6 */
+.devs_windowsPage .meetTheBloggersWrapper {
+    margin-top: 0;
+}
+
+    .devs_windowsPage .meetTheBloggersWrapper .ui-tabs-nav {
+        padding: 0;
+        height: 31px;
+    }
+
+        .devs_windowsPage .meetTheBloggersWrapper .ui-tabs-nav a {
+            margin-left: 0;
+            margin-right: 6px;
+        }
+
+
+
+
+
+/* 4 Tab boxes on Developers sub pages */
+.ui-tabs-hide {
+    display: none;
+}
+
+.tier2page .azureCommunitiesTabBox {
+    visibility: hidden;
+}
+
+    .tier2page .azureCommunitiesTabBox .ui-tabs-nav {
+        list-style: none;
+        margin: 0 0 13px 0;
+        padding: 0;
+        height: 23px;
+        border-bottom: 1px solid #a6a6a6;
+    }
+
+        .tier2page .azureCommunitiesTabBox .ui-tabs-nav li {
+            float: left;
+        }
+
+        .tier2page .azureCommunitiesTabBox .ui-tabs-nav a {
+            display: block;
+            width: 65px;
+            height: 17px;
+            padding-top: 6px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 10px;
+            background: none;
+            color: #000;
+        }
+
+        .tier2page .azureCommunitiesTabBox .ui-tabs-nav .ui-state-default a {
+        }
+
+        .tier2page .azureCommunitiesTabBox .ui-tabs-nav .ui-state-active a {
+            background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/tab-box-sm-tab-bkgd.gif') 0 0 no-repeat;
+        }
+
+        .tier2page .azureCommunitiesTabBox .ui-tabs-nav .ui-state-default.ui-state-hover a,
+        .tier2page .azureCommunitiesTabBox .ui-tabs-nav .ui-state-active.ui-state-hover a {
+            background-image: none;
+            background-color: #ebffc1;
+            border: 1px solid #a6a6a6;
+            border-bottom: none;
+            padding-top: 5px;
+            width: 63px;
+        }
+
+    .tier2page .azureCommunitiesTabBox .ui-tabs-panel {
+        overflow-x: hidden;
+    }
+
+    .tier2page .azureCommunitiesTabBox p.moreLink {
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
+    .tier2page .azureCommunitiesTabBox .linkList {
+        margin-bottom: 0;
+    }
+
+
+
+/* Meet The Bloggers box on /devs/windows/ */
+.ui-tabs-hide {
+    display: none;
+}
+
+.meetTheBloggersWrapper {
+    margin-top: -33px;
+}
+
+    .meetTheBloggersWrapper .ui-tabs-nav {
+        list-style: none;
+        margin: 0 0 6px 0;
+        padding: 0 0 0 170px;
+        height: 24px;
+    }
+
+        .meetTheBloggersWrapper .ui-tabs-nav li {
+            float: left;
+        }
+
+        .meetTheBloggersWrapper .ui-tabs-nav a {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-left: 6px;
+            text-decoration: none;
+        }
+
+            .meetTheBloggersWrapper .ui-tabs-nav a img {
+                margin: 2px 0 0 2px;
+            }
+
+        .meetTheBloggersWrapper .ui-tabs-nav .ui-state-default .activeImg,
+        .meetTheBloggersWrapper .ui-tabs-nav .ui-state-active .inactiveImg {
+            display: none;
+        }
+
+        .meetTheBloggersWrapper .ui-tabs-nav .ui-state-active .activeImg {
+            display: inline;
+        }
+
+        .meetTheBloggersWrapper .ui-tabs-nav .ui-state-active a,
+        .meetTheBloggersWrapper .ui-tabs-nav .ui-state-hover a {
+            background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/meet-the-bloggers/over-state-bkgd.gif') no-repeat 0 0;
+        }
+
+    .meetTheBloggersWrapper .ui-tabs-panel .bloggerImgWrapper {
+        width: 54px;
+        height: 54px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .meetTheBloggersWrapper .ui-tabs-panel .bloggerName {
+        font-weight: bold;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .meetTheBloggersWrapper .ui-tabs-panel p {
+    }
+
+/*offers page******************************************/
+div#offers_introspecial2 {
+    background: #ffffff url(http://www.microsoft.com/global/windowsazure/PublishingImages/offers/banner_image.png) no-repeat center top;
+    width: 650px;
+    height: 223px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+span#buy_lg a {
+    background: #90e30d url(http://www.microsoft.com/global/windowsazure/PublishingImages/wt_offers/bg_btn_grad_grn.jpg) repeat-x left -.15em;
+    font-family: Segoe ui;
+    font-size: 17px;
+    font-weight: lighter;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 26px;
+    padding: .4em 1.2em;
+    float: right;
+    text-align: center;
+    width: 53px;
+}
+
+div#offers_devaccelerator {
+    background: #ffffff url(http://www.microsoft.com/global/windowsazure/PublishingImages/offers/box_round_gry.png) no-repeat center top;
+    width: 650px;
+    height: 140px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+div#offers_memberoffer {
+    background: #ffffff url(http://www.microsoft.com/global/windowsazure/PublishingImages/offers/box_round_blu.png) no-repeat center top;
+    width: 650px;
+    height: 100px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+div#offers_consumption {
+    background: #ffffff url(http://www.microsoft.com/global/windowsazure/PublishingImages/offers/box_round_gry2.png) no-repeat center top;
+    width: 650px;
+    height: 150px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+/*Offers comparison button*/
+
+.genericInnerWrapper .Comparison {
+    background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/Comparison_box_med.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 36px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    padding: 5px 0 8px;
+}
+
+    .genericInnerWrapper .Comparison .CompareSub h2 {
+        color: #1390BD;
+        margin-bottom: 2px;
+        margin-left: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+        .genericInnerWrapper .Comparison .CompareSub h2 p {
+            font-family: Verdana;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+.Comparison {
+    margin-bottom: 0;
+}
+
+    .Comparison h2 {
+        font-family: verdana;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .Comparison a {
+        color: #1390BD;
+        text-decoration: none;
+    }
+
+
+#content_msdn .twoColWrapper_50_50 .col01 {
+    background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/bottom_offerbox.png');
+    background-repeat: no-repeat;
+    margin-left: 60px;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 4px;
+    width: 40%;
+}
+
+#content_msdn .twoColWrapper_50_50 .col02 {
+    float: right;
+    background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/bottom_offerbox.png');
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-top: 4px;
+}
+
+
+
+/*Chat button placement*/
+#lpButton {
+    margin-left: -15px;
+}
+
+#offers_currency_dropdown {
+    width: 300px;
+    float: left;
+}
+
+/* Economics Page */
+div.tco_box {
+    background: url(http://www.microsoft.com/global/windowsazure/PublishingImages/economics/tco-box-tall.png) left bottom no-repeat;
+    padding: 20px;
+    width: 142px;
+    border-top: 1px solid #D4D4D4;
+}
+
+    div.tco_box img {
+        padding: 2px 0px;
+    }
+
+    div.tco_box a {
+        text-align: center;
+    }
+
+#pricing-tabs {
+    min-height: 388px;
+    width: 888px;
+    padding: 0px;
+    margin-left: 15px;
+}
+
+    #pricing-tabs .tabs-nav {
+        float: left;
+        width: 310px;
+        margin: 0 60px 0 0;
+        padding: 88px 0 0 0px;
+        list-style-type: none;
+    }
+
+    #pricing-tabs .ui-tabs-panel ul li {
+        padding: 0px;
+        margin-bottom: 0px;
+        line-height: normal;
+    }
+
+.tabs-nav a {
+    background-image: url(http://www.microsoft.com/global/windowsazure/PublishingImages/economics/textMenu.png);
+    display: block;
+    width: 310px;
+    height: 70px;
+    text-decoration: none;
+    outline: none;
+    text-indent: -9999px;
+}
+
+#pricing-tabs .tabs-nav li#tabAzure a {
+    background-position: 0 0;
+}
+
+#pricing-tabs .tabs-nav li#tabSqlazure a {
+    background-position: 0 -60px;
+}
+
+#pricing-tabs .tabs-nav li#tabAppfabric a {
+    background-position: 0 -125px;
+}
+
+.tabs-nav li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 312px;
+    height: 70px;
+}
+
+
+#pricing-tabs .ui-tabs-panel {
+    padding: 40px 20px 0px 20px;
+    margin: 0 0 0 360px;
+    /*width: 500px;
+        float:right;*/
+}
+
+
+#pricing-tabs .ui-state-active, #pricing-tabs .ui-state-hover {
+    background-color: #15A5D9;
+    border-width: 0px 3px 0px 0px;
+    border-color: #A5A5A5;
+}
+
+#pricing-tabs .ui-state-hover {
+    border-color: #C5C5C5;
+}
+
+div.details {
+    display: none;
+}
+
+p.getStartedBtn {
+    border: none;
+    padding-top: 40px;
+    clear: left;
+    float: left;
+    padding-left: 20px;
+    width: 265px;
+}
+
+div.graph_container {
+    padding: 5px;
+    border: 1px solid #AAA;
+}
+
+/* FAQ page ********************************************************************/
+.faqPage .leftTitleWide {
+    margin: 20px 0 0 0;
+}
+
+.faqPage ul.faqCategoryMenu {
+    list-style-type: none;
+    margin: 0 0 0px 0;
+    padding: 0 0 10px 0;
+}
+
+    .faqPage ul.faqCategoryMenu li {
+        float: left;
+        height: 27px;
+        line-height: 21px;
+        padding: 0 25px 0 0;
+        margin: 0;
+    }
+
+.faqPage .topLink {
+    margin: 25px 0 30px 0;
+}
+
+
+
+/* Expando list styles */
+.expandoList {
+    margin-bottom: 20px;
+}
+
+    .expandoList a.expandall {
+        line-height: 30px;
+    }
+
+    .expandoList .expandoItem {
+        margin: 16px 0 0 20px !important;
+        padding: 0 0 0 0px;
+    }
+
+    .expandoList .expanded {
+        background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/minus_icon.png') no-repeat;
+        background-position: 0px 7px;
+        min-height: 21px;
+        padding-left: 5px;
+        overflow: auto;
+    }
+
+    .expandoList .collapsed {
+        background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/plus_icon.png') no-repeat;
+        background-position: 0px 7px;
+        min-height: 21px;
+        padding-left: 5px;
+        overflow: auto;
+    }
+
+    .expandoList a.contentToggle {
+        text-decoration: none;
+        margin: 10px 0 10px 0;
+        padding: 0 0 0 25px;
+        display: block;
+        width: 95%;
+    }
+
+    .expandoList .expanded a.contentToggle {
+        font-weight: bold;
+    }
+
+    .expandoList .content {
+        padding: 5px 5px 5px 5px;
+        margin: 0 0 0 18px;
+    }
+
+    .expandoList .li {
+        min-height: 21px;
+    }
+
+
+
+
+/* Resources > Community page */
+#facebookBlurb,
+#twitterBlurb,
+#linkedinBlurb {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    margin-top: 12px;
+}
+
+#facebookBlurb {
+    background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/facebook-logo.gif');
+}
+
+#twitterBlurb {
+    background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/twitter-logo.gif');
+}
+
+#linkedinBlurb {
+    background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/linkedIn.png');
+}
+
+    #facebookBlurb h2,
+    #twitterBlurb h2,
+    #linkedinBlurb h2 {
+        padding-top: 2px;
+    }
+
+
+
+#accessControlInfographic,
+#serviceBusInfographic,
+#azureFabricInfographic {
+    display: block;
+    border: 1px solid #a6a6a6;
+    height: 160px;
+}
+
+    #accessControlInfographic img,
+    #serviceBusInfographic img,
+    #azureFabricInfographic img {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+#accessControlInfographic {
+    width: 257px;
+}
+
+#serviceBusInfographic {
+    width: 247px;
+}
+
+#azureFabricInfographic {
+    width: 215px;
+}
+
+.infographicCaption {
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+    .infographicCaption a,
+    .infographicCaption a:visited {
+        text-decoration: none;
+        font-style: italic;
+    }
+
+
+/* Get Started page */
+.anchorLinks {
+    list-style: none;
+    margin: 15px 0 10px 0;
+    padding: 0;
+    height: 35px;
+}
+
+    .anchorLinks li {
+        float: left;
+        margin-right: 43px;
+    }
+
+        .anchorLinks li.last {
+            margin-right: 0;
+        }
+
+#bottom-boxes .getstarted .img {
+    background-position: 0px -176px;
+}
+
+.getStartedPage .getStartedList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.getStartedPage ul .getStartedList,
+.getStartedPage ol .getStartedList {
+    margin-top: 12px;
+}
+
+.getStartedPage .getStartedList > li {
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/get-started-list-image.gif') 0 2px no-repeat;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.getStartedPage .getStartedList ul {
+    list-style-type: disc;
+}
+
+    .getStartedPage .getStartedList ol ol li,
+    .getStartedPage .getStartedList ul ol li,
+    .getStartedPage .getStartedModule ul ol li,
+    .getStartedPage .getStartedModule ol ol li {
+        list-style-type: decimal;
+        padding-left: 4px;
+        margin-left: 22px;
+        padding-bottom: 0;
+        margin-bottom: 8px;
+    }
+
+    .getStartedPage .getStartedList ol ul,
+    .getStartedPage .getStartedList ul ul,
+    .getStartedPage .getStartedModule ol ul,
+    .getStartedPage .getStartedModule ul ul {
+        margin-left: 0;
+    }
+
+        .getStartedPage .getStartedList ol ul li,
+        .getStartedPage .getStartedList ul ul li,
+        .getStartedPage .getStartedModule ol ul li,
+        .getStartedPage .getStartedModule ul ul li {
+            padding-left: 10px;
+            margin-left: 16px;
+            padding-bottom: 0;
+            margin-bottom: 8px;
+        }
+
+.getStartedPage .getStartedList h3 {
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.getStartedPage ol {
+    margin-left: 0;
+}
+
+.getStartedPage .getStartedList h3 + ol {
+    margin-top: 10px;
+}
+
+.getStartedPage ol li {
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding: 1px 0 10px 27px;
+    margin-bottom: 0;
+}
+
+    .getStartedPage ol li ul li {
+        list-style-type: disc;
+    }
+
+    .getStartedPage ol li.num01 {
+        background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/list-numbers/01.gif');
+    }
+
+    .getStartedPage ol li.num02 {
+        background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/list-numbers/02.gif');
+    }
+
+    .getStartedPage ol li.num03 {
+        background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/list-numbers/03.gif');
+    }
+
+    .getStartedPage ol li.num04 {
+        background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/list-numbers/04.gif');
+    }
+
+    .getStartedPage ol li.num05 {
+        background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/list-numbers/05.gif');
+    }
+
+    .getStartedPage ol li.num06 {
+        background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/list-numbers/06.gif');
+    }
+
+    .getStartedPage ol li.num07 {
+        background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/list-numbers/07.gif');
+    }
+
+    .getStartedPage ol li.num08 {
+        background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/list-numbers/08.gif');
+    }
+
+    .getStartedPage ol li.num09 {
+        background-image: url('http://www.microsoft.com/global/windowsazure/PublishingImages/list-numbers/09.gif');
+    }
+
+#getStartedImageLinks {
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+
+.getStartedPage .getStartedModule {
+}
+
+    .getStartedPage .getStartedModule ol {
+        padding: 15px 25px 0 15px;
+        margin-bottom: 25px;
+        border-width: 2px;
+        border-style: solid;
+        border-top: none;
+        width: 590px;
+    }
+
+        .getStartedPage .getStartedModule ol ol {
+            padding: 0;
+            margin-bottom: 0;
+            border-width: 0;
+            border-style: none;
+            width: auto;
+        }
+
+    .getStartedPage .getStartedModule h2 {
+        height: 20px;
+        color: #FFFFFF;
+        padding: 5px 0 7px 15px;
+        width: 619px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+.getStartedPage #getStartedModule01 ol {
+    border-color: #7ce3f2;
+}
+
+.getStartedPage #getStartedModule01 h2 {
+    background: #7ce3f2 url('http://www.microsoft.com/global/windowsazure/PublishingImages/get-started-module-01-top.gif') no-repeat 0 0;
+}
+
+.getStartedPage #getStartedModule02 ol {
+    border-color: #53cae9;
+}
+
+.getStartedPage #getStartedModule02 h2 {
+    background: #53cae9 url('http://www.microsoft.com/global/windowsazure/PublishingImages/get-started-module-02-top.gif') no-repeat 0 0;
+}
+
+.getStartedPage #getStartedModule03 ol {
+    border-color: #16a5d9;
+}
+
+.getStartedPage #getStartedModule03 h2 {
+    background: #16a5d9 url('http://www.microsoft.com/global/windowsazure/PublishingImages/get-started-module-03-top.gif') no-repeat 0 0;
+}
+
+
+
+
+
+/* Share This button */
+.shareButton,
+.shareButtonTopRight {
+    width: 107px;
+    height: 23px;
+    margin-bottom: 14px;
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/share-this-btn.gif') no-repeat 0 0;
+}
+
+    .shareButton a,
+    .shareButtonTopRight a {
+        display: block;
+        width: 107px;
+        height: 23px;
+    }
+
+    .shareButton .share-link-wrapper,
+    .shareButtonTopRight .share-link-wrapper {
+        display: inline;
+    }
+
+.shareButtonTopRight {
+    float: right;
+}
+
+
+body #share-box {
+    width: 270px;
+    border: 1px solid #a6a6a6;
+}
+
+#share-box #share-menu {
+    display: none;
+}
+
+body #share-box #share-content-inner {
+    padding: 10px 0 10px 10px;
+}
+
+#share-box #share-link-list {
+    list-style-type: none;
+}
+
+    #share-box #share-link-list li {
+        float: left;
+    }
+
+    #share-box #share-link-list a {
+        display: block;
+        width: 115px;
+        height: 22px;
+        color: #000000;
+        vertical-align: top;
+        margin-bottom: 8px;
+        margin-right: 15px;
+    }
+
+        #share-box #share-link-list a:hover {
+            color: #a6a6a6;
+        }
+
+#share-box #share-close {
+    color: #a6a6a6;
+    text-decoration: none;
+}
+
+#share-box #share-link-list a img {
+    float: left;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+
+/* Pricing Info/Offers page */
+.pricingInfoPage div#fancy_div {
+    background-color: #FFFFFF;
+}
+
+.pricingInfoPage #pagegate-contents {
+    padding: 10px;
+    color: #000000;
+}
+
+    .pricingInfoPage #pagegate-contents p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .pricingInfoPage #pagegate-contents .radioButton {
+        position: relative;
+        top: 2px;
+    }
+
+    .pricingInfoPage #pagegate-contents .button {
+        border: 1px solid #000000;
+        display: block;
+        float: right;
+        height: 20px;
+        margin-bottom: 10px;
+        padding-top: 5px;
+        text-align: center;
+        text-decoration: none;
+        width: 75px;
+    }
+
+        .pricingInfoPage #pagegate-contents .button:hover {
+            background-color: #EBFFC1;
+        }
+
+    .pricingInfoPage #pagegate-contents #cancelButton {
+        margin-right: 10px;
+    }
+
+
+
+/* homepage styles */
+.homepage .threeColWrapper .col01 {
+    width: 390px;
+    margin-right: 64px;
+    padding-right: 0;
+}
+
+.homepage .threeColWrapper .col02 {
+    width: 225px;
+    background: none;
+    padding-left: 0;
+}
+
+.homepage .threeColWrapper .col03 {
+    width: 200px;
+    padding-left: 25px;
+    background: transparent url('http://www.microsoft.com/global/windowsazure/PublishingImages/column-divider.png') 0 0 no-repeat;
+}
+
+.homepage .threeColWrapper .col01,
+.homepage .threeColWrapper .col02 {
+    float: left;
+    padding-top: 24px;
+}
+
+.homepage .threeColWrapper .col03 {
+    float: right;
+    padding-top: 24px;
+}
+
+
+
+
+#homepageSlideshowWrapper {
+    width: 638px;
+    height: 194px;
+    float: left;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#homepageSlideshowSlides {
+    width: 638px;
+    height: 166px;
+}
+
+    #homepageSlideshowSlides img {
+        border: 1px solid #a9a9a9;
+        display: none;
+    }
+
+#homepageSlideshowButtons {
+    position: absolute;
+    right: 0;
+    top: 175px;
+}
+
+    #homepageSlideshowButtons a {
+        float: left;
+        margin-left: 5px;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #a9a9a9;
+        color: #FFFFFF;
+    }
+
+        #homepageSlideshowButtons a.activeSlide {
+            background-color: #8bdc15;
+            color: #8bdc15;
+        }
+
+.homepage h1 {
+    position: relative;
+}
+
+    .homepage h1 .rssLink {
+        position: absolute;
+        margin-left: 0;
+        left: -20px;
+        top: 3px;
+    }
+
+.homepage .twoColWrapper_80_20 > .col02 {
+    padding-top: 18px;
+}
+
+
+
+.silverlightPlayerFloatLeft {
+    float: left;
+    margin: 20px 20px 20px 0;
+}
+
+.signUpButton {
+    display: block;
+    height: 38px;
+}
+
+
+/* specific landing page styles */
+.getStartedPage .leftSideContent {
+    width: 365px;
+}
+
+.getStartedPage .rightSideContent {
+    width: 525px;
+}
+
+.videoThumbnailColumn {
+    float: right;
+    width: 100px;
+}
+
+    .videoThumbnailColumn .imgLink {
+        display: block;
+        margin-top: 27px;
+    }
+
+        .videoThumbnailColumn .imgLink.firstLink {
+            margin-top: 0;
+        }
+
+    .videoThumbnailColumn p {
+        margin: 12px 0 0 0;
+    }
+
+.devsPage .threeColWrapper .col01 {
+    width: 402px;
+}
+
+.devsPage .threeColWrapper .col02 {
+    background: none;
+    width: 205px;
+}
+
+.devsPage .threeColWrapper .col03 {
+    width: 206px;
+}
+
+
+.devsPage .videoThumbnailRow {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .devsPage .videoThumbnailRow li {
+        float: left;
+        width: 164px;
+        margin-left: 69px;
+    }
+
+        .devsPage .videoThumbnailRow li.firstLink {
+            margin-left: 0;
+        }
+
+        .devsPage .videoThumbnailRow li.moreLink {
+            float: none;
+            clear: both;
+            margin-left: 0;
+            padding-top: 15px;
+            text-align: right;
+            width: 100%;
+        }
+
+        .devsPage .videoThumbnailRow li img {
+            border: 1px solid #03b3df;
+        }
+
+
+
+.productsOverviewPage .heroCopy p {
+    width: 430px;
+    float: left;
+}
+
+.productsOverviewPage .heroCopy ul {
+    width: 415px;
+    float: left;
+}
+
+.productsOverviewPage .heroCopy .thumbWrapper {
+    margin-left: 25px;
+    width: 150px;
+    float: right;
+}
+
+
+
+
+
+
+/* Case Studies/Evidence page */
+#CaseStudiesList .title {
+    line-height: 22px;
+}
+
+#CaseStudiesList li.hr {
+    margin-bottom: 0;
+}
+
+#CaseStudiesList .companyLogo {
+    float: left;
+    width: 215px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#CaseStudiesList p {
+    float: right;
+    width: 640px;
+}
+
+#CaseStudiesMenu {
+    background: url('http://www.microsoft.com/global/windowsazure/PublishingImages/800px-width-gradient-right-side.jpg') no-repeat bottom right;
+    width: 800px;
+    overflow: auto;
+}
+
+#PartnersMenu {
+    background: url('http://www.microsoft.com/global/windowsazure/PublishingImages/590px-width-gradient-right-side.jpg') no-repeat bottom right;
+    width: 590px;
+    overflow: auto;
+}
+
+    #CaseStudiesMenu .tab, #PartnersMenu .tab {
+        border: 1px solid #a6a6a6;
+        padding: 3px 11px;
+        font-weight: bold;
+        float: left;
+        vertical-align: bottom;
+        position: relative;
+        left: 10px;
+        margin-left: 10px;
+        top: 4px;
+        cursor: pointer;
+    }
+
+        #CaseStudiesMenu .tab:hover, #PartnersMenu .tab:hover {
+            background-color: #ebffc1;
+        }
+
+    #CaseStudiesMenu .tabSelected, #PartnersMenu .tabSelected {
+        border: 1px solid #a6a6a6;
+        padding: 5px 11px;
+        font-weight: bold;
+        float: left;
+        position: relative;
+        left: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        background-color: #7bce17;
+    }
+
+    #CaseStudiesMenu a, #CaseStudiesMenu a:visited, #PartnersMenu a, #PartnersMenu a:visited {
+        text-decoration: none;
+    }
+
+#CaseStudiesMenuLeftBorder, #PartnersMenuLeftBorder {
+    background: url('http://www.microsoft.com/global/windowsazure/PublishingImages/30px-height-gradient-bottom.jpg') no-repeat;
+    height: 30px;
+}
+
+/* pdctoken  */
+div#pdc_intro {
+    background: url('http://www.microsoft.com/global/windowsazure/PublishingImages/pdctoken/tokenbkg.png') no-repeat center top;
+    width: 869px;
+    height: 138px;
+    float: left;
+    margin: auto 0px;
+}
+
+    div#pdc_intro h1 {
+        color: #19a6d9;
+        font: bold 2.2em/1em "Segoe UI";
+        font-weight: lighter;
+        margin: -25px auto auto 11px;
+    }
+
+    div#pdc_intro h2 {
+        color: #fff;
+        padding: 0px;
+        margin-bottom: 5px;
+    }
+
+    div#pdc_intro p {
+        color: #fff;
+        font: bold 1.1em/1.2em verdana;
+        margin: 15px 35px auto 35px;
+    }
+
+    div#pdc_intro a.txt_link_wht {
+        color: #fff;
+    }
+
+    div#pdc_intro div.btn_shad_grn {
+        margin-bottom: .5em;
+    }
+
+        div#pdc_intro div.btn_shad_grn a {
+            border: solid 1px #43a115;
+            border-width: 1px 2px 2px 1px;
+            background: #90e30d url('http://www.microsoft.com/global/windowsazure/PublishingImages/pdctoken/bg_btn_grad_grn.jpg') repeat-x left bottom;
+            font: bold 1.9em/2em verdana;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            padding: 4px 0.8em;
+        }
+
+div#pdc_special_cta {
+    margin: -60px auto auto 527px;
+    text-align: center;
+}
+
+div#pdc_col01 {
+    margin: 13px auto auto -674px;
+    text-align: center;
+}
+
+div#pdc_col02 {
+    margin: -91px auto auto -250px;
+    text-align: center;
+}
+
+div#pdc_col03 {
+    margin: -91px auto auto 190px;
+    text-align: center;
+}
+
+div#pdc_col04 {
+    margin: -91px auto auto 640px;
+    text-align: center;
+}
+
+
+/* rotator in-page placement */
+div#rotator {
+    position: relative;
+    height: 260px;
+}
+    /* rotator css */
+    div#rotator ul li {
+        float: left;
+        position: absolute;
+        list-style: none;
+    }
+        /* rotator image style */
+        div#rotator ul li img {
+            padding: 4px;
+            background: #FFF;
+        }
+
+        div#rotator ul li.show {
+            z-index: 500;
+        }
+
+div#rotator {
+    height: 260px;
+}
+/* rotator css */
+div#rotator2 ul li {
+    float: left;
+    position: absolute;
+    list-style: none;
+}
+    /* rotator image style */
+    div#rotator2 ul li img {
+        padding: 4px;
+        background: #FFF;
+    }
+
+    div#rotator2 ul li.show {
+        z-index: 500;
+    }
+
+div#rotator, div#rotator2 {
+    z-index: 0;
+    position: relative;
+}
+
+a.footerLink {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+    a.footerLink.First, a.footerLink.Last {
+        padding-left: 0em;
+    }
+
+/* Estilos para la clase depedidos  */
+.tdIzquierda {
+    text-align: left;
+    width: 350px;
+}
+
+.tdEdiciongral {
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: small;
+    background:"#D7D7D7";
+}
+
+.tdEdicion {
+    width: 114px;
+    text-align: right;
+    font-family: 'Segoe UI';
+    font-size: small;
+    background:"#D7D7D7";
+}
+
+.tdAviso {
+    width: 300px;
+    text-align: right;
+    border-color: #FFC30D;
+    border: 0px solid #FFC30D;
+    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #990000;
+    text-decoration: none;
+}
+
+.tdCeldaEdicion {
+    width: 349px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: small;
+    border: 1px solid #FFFFFF;
+}
+
+.tdEdicionCampo {
+    width: 349px;
+    text-align: left;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 4px;
+     padding-right: 1px;
+}
+
+.tdCeldaGrisEdicionViaje {
+    width: 120px;
+    text-align: right;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    background:"#D7D7D7";
+    height: 20px;
+}
+
+.tdCelda {
+    width: 120px;
+    height: 30px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-size: 14px;
+    border:1px;
+    border-color: #FFBD32;
+}
+
+.tabledata {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: "center";
+    width :800px;
+}
+
+.tabledata90 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: "center";
+    width :900px;
+}
+
+.tabledata950 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: "center";
+    width :900px;
+}
+
+.tableprincipal {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: "center";
+    width:1350px;
+}
+
+.tdCeldaGrisEdicionCierre {
+    width: 250px;
+    text-align: right;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: 14px;
+    background: #D7D7D7;
+}
+
+.tdCeldaGrisHeader {
+    width: 120px;
+    text-align: center;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: 14px;
+    background: #D7D7D7;
+}
+
+.td200 {
+    width: 250px;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    vertical-align: middle;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+.td150 {
+    width: 150px;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    vertical-align: middle;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+.td100 {
+    width: 100px;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: 12px;
+    vertical-align: middle;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+.tdCeldaGrisEdicionizq {
+    width: "20%";
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: 11px;
+    height: 30px;
+    vertical-align: top;
+    padding-left: 3px;
+    padding-top: 2px;
+}
+
+.tdCeldaGrisEdicion {
+    width: "20%";
+    text-align: right;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: small;
+    background: "#D7D7D7";
+    height: 30px;
+    vertical-align: top;
+}
+
+.tdNuevo {
+    width: 114px;
+    text-align: right;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, Sans-Serif;
+    font-size: x-large;
+    background: "#D7D7D7";
+}
+
+.formatotabla {
+    width: 90%;
+    border: 0;
+    text-align: "center";
+    margin: 0;
+}
+
+#tabla {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: "center";
+}
+
+.txtgradiente {
+    width: 217px;
+    background: transparent url('../Imagenes/bg.jpg') no-repeat;
+    color: #747862;
+    height: 20px;
+    border: 0;
+    padding: 4px 8px;
+    margin-bottom: 0px;
+}
+
+.txtgradientemin {
+    width: 180px;
+    background: transparent url('../Imagenes/bg.jpg') no-repeat;
+    color: #747862;
+    height: 20px;
+    border: 0;
+    padding: 4px 8px;
+    margin-bottom: 0px;
+}
+
+/* setting the width and height of the SELECT element to match the replacing graphics */
+select.select {
+    position: relative;
+    z-index: 10;
+    width: 232px !important;
+    height: 25px !important;
+    line-height: 26px;
+    color: #747862;
+    top: 1px;
+    left: -1px;
+}
+
+/* dynamically created SPAN, placed below the SELECT */
+span.select {
+    position: absolute;
+    bottom: 0;
+    float: left;
+    left: 0;
+    width: 232px;
+    height: 00px;
+    line-height: 25px;
+    text-indent: 10px;
+    background: url('../Imagenes/bg.jpg') no-repeat 0 0;
+    cursor: default;
+    z-index: 1;
+    color: #747862;
+}
+
+
+/* setting the width and height of the SELECT element to match the replacing graphics */
+select.selectmin {
+    position: relative;
+    z-index: 10;
+    width: 125px !important;
+    height: 25px !important;
+    line-height: 26px;
+    color: #747862;
+    top: 0px;
+    left: -4px;
+}
+
+
+select.selectsmall {
+    position: relative;
+    z-index: 10;
+    height: 25px !important;
+    line-height: 26px;
+    color: #747862;
+    top: 0px;
+    left: -2px;
+    font-size: 10px;
+}
+
+/* dynamically created SPAN, placed below the SELECT */
+span.selectmin {
+    position: absolute;
+    bottom: 0;
+    float: left;
+    left: 0;
+    width: 232px;
+    height: 00px;
+    line-height: 25px;
+    text-indent: 10px;
+    background: url('../Imagenes/bg.jpg') no-repeat 0 0;
+    cursor: default;
+    z-index: 1;
+    color: #747862;
+}
+
+.boxZero {
+    display: none;
+}
+
+
+.formLabel 
+{
+    border: 1px solid #CCCCCC;
+    font-weight: bold;
+    text-align: right;
+    padding: 4px;
+    margin: 2px 2px 4px 2px;
+    background: #F5F5F5;
+    -webkit-border-radius: 4px 0px 0px 4px;
+    -moz-border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0px 0px 4px;
+    font-family: 'Segoe UI';
+    font-size:13px;
+}
+
+.formLabelCenter
+{
+    border: 1px solid #CCCCCC;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    margin: 2px 2px 4px 2px;
+    background: #F5F5F5;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    font-family: 'Segoe UI';
+    font-size:13px;
+}
+
+.formLabelReporte
+{
+    border: 1px solid #CCCCCC;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+    margin: 2px 2px 4px 2px;
+    background: #F5F5F5;
+    
+    font-family: 'Segoe UI';
+    font-size:13px;
+}
+
+.formLabelReporte12
+{
+    border: 1px solid #CCCCCC;
+    font-weight: bold;
+    text-align: right;
+    padding: 4px;
+    margin: 2px 2px 4px 2px;
+    background: #F5F5F5;
+    
+    font-family: 'Segoe UI';
+    font-size:12px;
+}
+
+
+.formValueReporte {
+   
+    padding: 4px;
+    margin: 4px 4px 4px 4px;
+    text-align: center;
+    /*-webkit-border-radius: 0px 4px 4px 0px;
+    -moz-border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 4px 4px 0px; border: 1px solid #CCCCCC;*/
+    font-family: 'Segoe UI';
+    font-size:12px;
+}
+
+.formValueReporteIz {
+   
+    padding: 4px;
+    margin: 4px 4px 4px 4px;
+    text-align: left;
+    /*-webkit-border-radius: 0px 4px 4px 0px;
+    -moz-border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 4px 4px 0px; border: 1px solid #CCCCCC;*/
+    font-family: 'Segoe UI';
+    font-size:12px;
+}
+.gridFilter legend
+{
+  border:0px;  
+  font-weight:bold;
+  text-align:center;
+  color:#EDEDED;
+}
+
+.gridFilter fieldSet
+{
+    border:0px;
+    background:#EDEDED;
+}
+.formValue {
+   
+    padding: 4px;
+    margin: 2px 2px 4px 2px;
+    /*-webkit-border-radius: 0px 4px 4px 0px;
+    -moz-border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 4px 4px 0px; border: 1px solid #CCCCCC;*/
+    font-family: 'Segoe UI';
+}
+
+
+
+
+

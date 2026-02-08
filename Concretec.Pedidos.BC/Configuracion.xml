@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<appSettings>
+  <CS value="server=localhost;database=Pedidos;uid=sa;pwd=Pato12345;"></CS>
+</appSettings>

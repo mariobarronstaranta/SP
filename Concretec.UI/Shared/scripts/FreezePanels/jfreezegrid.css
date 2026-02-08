@@ -1,0 +1,36 @@
+#jfg_wrapper {
+	overflow:hidden;
+}
+			
+#jfg_header {
+	position:relative;
+}
+
+#jfg_header_left, #jfg_header_right  {
+	/*margin-left: -1px;*/
+}
+
+#jfg_header_right {
+	overflow: hidden;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+
+#jfg_header_right_inner {
+	overflow:hidden;
+}
+
+#jfg_body_left {
+	overflow: hidden;
+}
+
+#jfg_body_left table {
+	margin-top: -1px;
+}
+
+#jfg_body_right {
+	overflow:scroll;
+	position:absolute;
+}
+

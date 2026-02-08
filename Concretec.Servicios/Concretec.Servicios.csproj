@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55524597-FA08-4831-AEBC-1B320CBBE368}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Concretec.Servicios</RootNamespace>
+    <AssemblyName>Concretec.Servicios</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>http://localhost/servicios</DeployIisAppPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bitacora.svc" />
+    <Content Include="Ciudades.svc" />
+    <Content Include="Clientes.svc" />
+    <Content Include="Configuracion.svc" />
+    <Content Include="Empleados.svc" />
+    <Content Include="MarcaCamiones.svc" />
+    <Content Include="Obras.svc" />
+    <Content Include="Parametros.svc" />
+    <Content Include="Pedidos.svc" />
+    <Content Include="Personal.svc" />
+    <Content Include="Plantas.svc" />
+    <Content Include="Productos.svc" />
+    <Content Include="SFiltros.svc" />
+    <Content Include="Sincronizar.svc" />
+    <Content Include="Unidades.svc" />
+    <Content Include="Usos.svc" />
+    <Content Include="Usuarios.svc" />
+    <Content Include="Viajes.svc" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bitacora.svc.cs">
+      <DependentUpon>Bitacora.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Ciudades.svc.cs">
+      <DependentUpon>Ciudades.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.svc.cs">
+      <DependentUpon>Clientes.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.svc.cs">
+      <DependentUpon>Configuracion.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.svc.cs">
+      <DependentUpon>Empleados.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IBitacora.cs" />
+    <Compile Include="ICiudades.cs" />
+    <Compile Include="IClientes.cs" />
+    <Compile Include="IConfiguracion.cs" />
+    <Compile Include="IEmpleados.cs" />
+    <Compile Include="IMarcaCamiones.cs" />
+    <Compile Include="IObras.cs" />
+    <Compile Include="IParametros.cs" />
+    <Compile Include="IPedidos.cs" />
+    <Compile Include="IPersonal.cs" />
+    <Compile Include="IPlantas.cs" />
+    <Compile Include="IProductos.cs" />
+    <Compile Include="ISFiltros.cs" />
+    <Compile Include="ISincronizar.cs" />
+    <Compile Include="IUnidades.cs" />
+    <Compile Include="IUsos.cs" />
+    <Compile Include="IUsuarios.cs" />
+    <Compile Include="IViajes.cs" />
+    <Compile Include="MarcaCamiones.svc.cs">
+      <DependentUpon>MarcaCamiones.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Obras.svc.cs">
+      <DependentUpon>Obras.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros.svc.cs">
+      <DependentUpon>Parametros.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.svc.cs">
+      <DependentUpon>Pedidos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Personal.svc.cs">
+      <DependentUpon>Personal.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Plantas.svc.cs">
+      <DependentUpon>Plantas.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.svc.cs">
+      <DependentUpon>Productos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SFiltros.svc.cs">
+      <DependentUpon>SFiltros.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Sincronizar.svc.cs">
+      <DependentUpon>Sincronizar.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Unidades.svc.cs">
+      <DependentUpon>Unidades.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Usos.svc.cs">
+      <DependentUpon>Usos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.svc.cs">
+      <DependentUpon>Usuarios.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Viajes.svc.cs">
+      <DependentUpon>Viajes.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Concretec.Pedidos.BE\Concretec.Pedidos.BE.csproj">
+      <Project>{35898c9e-891c-4fa4-9222-90b59b51800d}</Project>
+      <Name>Concretec.Pedidos.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Concretec.Pedidos.Utils\Concretec.Pedidos.Utils.csproj">
+      <Project>{24D74632-E582-4DD6-9B6F-6C80393D67D0}</Project>
+      <Name>Concretec.Pedidos.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\Servicios.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1139</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

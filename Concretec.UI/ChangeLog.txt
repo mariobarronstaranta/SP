@@ -1,0 +1,29 @@
+﻿Version 2018.10.27
+Fix -		Reporte Programadores - Correccion Filtro Clientes y Filtro Programador
+Fix			SP - rptProgramadores - Correccion Filtro Clientes y Filtro Programador
+Creacion	SP - BuscarProgramadorPedido
+
+Version 2018.10.30
+Fix			Reporte de Obras	Los filtros de texto deben de ser combos que dependan del filtro de ciudad
+Fix			Reporte de Remisiones
+Fix         Pantalla de Personal , el campo de busqueda solo debe de decir Nombre y no "Clave o NOmbre"
+
+Version 2019.01.22
+New			Perfil de Administrador Personal
+New			Master Page RH.master
+New			HomeReportesRH.aspx
+New			ConfigRH.aspx
+
+Version 2019.01.23
+New			Campo IDPersonal en ListadoPersonal.aspx
+New			Campo ID Personal en Catalogo CatalogoPersonal.aspx
+New			Edicion del campo Clave Personal en CatalogoPersonal
+Modify		Modficacion de SP ActualizaPersonal y BuscaPersonal
+
+Version 2019.01.26
+Modify		Fix Flujo de Edicion de Comision de Viajes
+Modify		Modificacion a los siguientes SPs ProcComisionViaje y SelViajeComision
+
+Version 2019.01.30
+Modify		Flujo de Eliminacion de Comision Viaje
+Modify		Modificacion a los siguientes SPs ProcComisionViaje

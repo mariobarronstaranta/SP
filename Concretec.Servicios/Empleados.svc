@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Concretec.Servicios.Empleados" CodeBehind="Empleados.svc.cs" %>

@@ -1,0 +1,165 @@
+﻿body {
+    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    color: #353535;
+}
+
+select {
+    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #353535;
+}
+
+.vprogramado {
+    background: #FFC30D;
+    border-color: #FFC30D;
+    border: 1px solid #FFC30D;
+    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: Black;
+    text-decoration: none;
+    min-width: 90px;
+	/*max-width: 90px;*/
+}
+
+.vdespachado {
+    background: #00A300;
+    border-color: #00A300;
+    border: 1px solid #00A300;
+    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: Black;
+    text-decoration: none;
+    min-width: 90px;
+	max-width: 90px;
+}
+
+.vcerrado {
+    background: #2D89EF;
+    border-color: #2D89EF;
+    border: 1px solid #2D89EF;
+    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: Black;
+    text-decoration: none;
+}
+
+.vcancelado {
+    background: #FF8080;
+    border-color: #FF8080;
+    border: 1px solid #FF8080;
+    	min-width: 90px;
+	max-width: 90px;
+}
+
+.tdrosa {
+    background: #FF8080;
+    border-color: #FF8080;
+    border: 1px solid #FF8080;
+    	min-width: 90px;
+	max-width: 90px;
+}
+
+.tdverde {
+    background: #FAFAFA;
+    border-color: #D8D8D8;
+    border: 1px solid #D8D8D8;
+	min-width: 90px;
+	max-width: 90px;
+}
+
+.tdgris {
+    background: #E0E0E0;
+    border-color: #E0E0E0;
+    border: 1px solid #E0E0E0;
+	min-width: 90px;
+	max-width: 90px;
+}
+
+
+
+.tdgrisCelda {
+    background: #E0E0E0;
+    border-color: #E0E0E0;
+    border: 0px solid #E0E0E0;
+    width: 200px;
+    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: right;
+    height: auto;
+}
+
+.tdNuevo {
+    width: 150px;
+    text-align: left;
+    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: #FFFFFF;
+    vertical-align: middle;
+    border: 1px solid #FFFFFF;
+    height: auto;
+}
+
+td 
+{
+    font-size: 12px;
+    vertical-align: bottom;
+    border: 1px solid #E0E0E0;
+}
+
+a.tooltip:hover {
+    text-decoration: none;
+}
+
+a.tooltip span {
+    display: none;
+    margin: 0 0 0 10px;
+    padding: 5px 5px;
+    min-width:100px;
+}
+
+a.tooltip:hover span {
+    display: inline;
+    position: absolute;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    color: #666666;
+    min-width:100px;
+}
+
+
+.formLabel 
+{
+    border: 1px solid #CCCCCC;
+    font-weight: bold;
+    text-align: right;
+    padding: 4px;
+    margin: 2px 2px 4px 2px;
+    background: #F5F5F5;
+    -webkit-border-radius: 4px 0px 0px 4px;
+    -moz-border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0px 0px 4px;
+    font-family: 'Segoe UI';
+    font-size:13px;
+    width:120px;
+    vertical-align:top;
+}
+
+.formValue {
+   
+    padding: 4px;
+    margin: 2px 2px 4px 2px;
+    /*-webkit-border-radius: 0px 4px 4px 0px;
+    -moz-border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 4px 4px 0px; border: 1px solid #CCCCCC;*/
+    font-family: 'Segoe UI';
+    vertical-align:top;
+    min-width:180px;
+}
+
+
+#header-row { position:fixed; top:0px; left:8px; }
+table {padding-top:15px; }
