@@ -1,91 +1,99 @@
 ﻿body {
-    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
-    color: #353535;
+    font-family: "Segoe UI", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background: #f4f6f8;
 }
 
 select {
-    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
     font-size: 11px;
-    color: #353535;
+    color: #374151;
 }
 
 .vprogramado {
-    background: #FFC30D;
-    border-color: #FFC30D;
-    border: 1px solid #FFC30D;
-    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    color: Black;
+    background: #facc15;
+    border-color: #facc15;
+    border: 1px solid #facc15;
+    font-family: "Segoe UI", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #111827;
     text-decoration: none;
     min-width: 90px;
-	/*max-width: 90px;*/
+    /*max-width: 90px;*/
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .vdespachado {
-    background: #00A300;
-    border-color: #00A300;
-    border: 1px solid #00A300;
-    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    color: Black;
+    background: #22c55e;
+    border-color: #22c55e;
+    border: 1px solid #22c55e;
+    font-family: "Segoe UI", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0f172a;
     text-decoration: none;
     min-width: 90px;
-	max-width: 90px;
+    max-width: 90px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .vcerrado {
-    background: #2D89EF;
-    border-color: #2D89EF;
-    border: 1px solid #2D89EF;
-    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    color: Black;
+    background: #3b82f6;
+    border-color: #3b82f6;
+    border: 1px solid #3b82f6;
+    font-family: "Segoe UI", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0f172a;
     text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .vcancelado {
-    background: #FF8080;
-    border-color: #FF8080;
-    border: 1px solid #FF8080;
-    	min-width: 90px;
-	max-width: 90px;
+    background: #f87171;
+    border-color: #f87171;
+    border: 1px solid #f87171;
+    min-width: 90px;
+    max-width: 90px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .tdrosa {
-    background: #FF8080;
-    border-color: #FF8080;
-    border: 1px solid #FF8080;
-    	min-width: 90px;
-	max-width: 90px;
+    background: #f87171;
+    border-color: #f87171;
+    border: 1px solid #f87171;
+    min-width: 90px;
+    max-width: 90px;
+    border-radius: 6px;
 }
 
 .tdverde {
-    background: #FAFAFA;
-    border-color: #D8D8D8;
-    border: 1px solid #D8D8D8;
-	min-width: 90px;
-	max-width: 90px;
+    background: #ffffff;
+    border-color: #e5e7eb;
+    border: 1px solid #e5e7eb;
+    min-width: 90px;
+    max-width: 90px;
 }
 
 .tdgris {
-    background: #E0E0E0;
-    border-color: #E0E0E0;
-    border: 1px solid #E0E0E0;
-	min-width: 90px;
-	max-width: 90px;
+    background: #f3f4f6;
+    border-color: #e5e7eb;
+    border: 1px solid #e5e7eb;
+    min-width: 90px;
+    max-width: 90px;
 }
 
-
-
 .tdgrisCelda {
-    background: #E0E0E0;
-    border-color: #E0E0E0;
-    border: 0px solid #E0E0E0;
+    background: #f3f4f6;
+    border-color: #e5e7eb;
+    border: 0px solid #e5e7eb;
     width: 200px;
-    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
     vertical-align: middle;
     text-align: right;
@@ -95,7 +103,7 @@ select {
 .tdNuevo {
     width: 150px;
     text-align: left;
-    font-family: "Segoe UI Semilight", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
     background: #FFFFFF;
     vertical-align: middle;
@@ -103,11 +111,11 @@ select {
     height: auto;
 }
 
-td 
-{
+td {
     font-size: 12px;
     vertical-align: bottom;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e5e7eb;
+    padding: 6px 8px;
 }
 
 a.tooltip:hover {
@@ -117,49 +125,70 @@ a.tooltip:hover {
 a.tooltip span {
     display: none;
     margin: 0 0 0 10px;
-    padding: 5px 5px;
-    min-width:100px;
+    padding: 8px 10px;
+    min-width: 100px;
 }
 
 a.tooltip:hover span {
     display: inline;
     position: absolute;
-    border: 1px solid #cccccc;
+    border: 1px solid #d1d5db;
     background: #ffffff;
-    color: #666666;
-    min-width:100px;
+    color: #374151;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+    min-width: 100px;
 }
 
 
-.formLabel 
-{
-    border: 1px solid #CCCCCC;
-    font-weight: bold;
+.formLabel {
+    border: 1px solid #d1d5db;
+    font-weight: 600;
     text-align: right;
     padding: 4px;
     margin: 2px 2px 4px 2px;
-    background: #F5F5F5;
+    background: #f3f4f6;
     -webkit-border-radius: 4px 0px 0px 4px;
     -moz-border-radius: 4px 0px 0px 4px;
     border-radius: 4px 0px 0px 4px;
     font-family: 'Segoe UI';
-    font-size:13px;
-    width:120px;
-    vertical-align:top;
+    font-size: 13px;
+    width: 120px;
+    vertical-align: top;
 }
 
 .formValue {
-   
+
     padding: 4px;
     margin: 2px 2px 4px 2px;
     /*-webkit-border-radius: 0px 4px 4px 0px;
     -moz-border-radius: 0px 4px 4px 0px;
     border-radius: 0px 4px 4px 0px; border: 1px solid #CCCCCC;*/
     font-family: 'Segoe UI';
-    vertical-align:top;
-    min-width:180px;
+    vertical-align: top;
+    min-width: 180px;
 }
 
 
-#header-row { position:fixed; top:0px; left:8px; }
-table {padding-top:15px; }
+#header-row {
+    position: fixed;
+    top: 0px;
+    left: 8px;
+}
+
+table {
+    padding-top: 15px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    border-radius: 10px;
+}
+
+.tdgris2 {
+    background: #e5e7eb;
+    border-color: #d1d5db;
+    border: 1px solid #d1d5db;
+    font-weight: 600;
+    color: #111827;
+}
