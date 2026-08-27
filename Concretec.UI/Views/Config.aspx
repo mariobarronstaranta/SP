@@ -31,13 +31,13 @@
         </td>
 
       <td style="text-align: center"><a href="CapturaFacturas.aspx"><img src="../MetroImages/CaptFacturas.png" width="120" height="120" onMouseOver="MouseRollover(this,'CaptFacturas_Over.png')" onMouseOut="MouseOut(this,'CaptFacturas.png')"/></a></td>
-      <td style="text-align: center"><a href="Combustibles.aspx"><img src="../MetroImages/TanqueCombustible.png" width="120" height="120" onMouseOver="MouseRollover(this,'TanqueCombustible.png')" onMouseOut="MouseOut(this,'TanqueCombustible.png')"/></a></td>
-      <td style="text-align: center"><a href="AdmonCombustibles.aspx"><img src="../MetroImages/MovsCombustible.png" width="120" height="120"   onMouseOver="MouseRollover(this,'MovsCombustible.png')" onMouseOut="MouseOut(this,'MovsCombustible.png')"/></a></td>
-      <td style="text-align: center"><a href="ReasignaUnidad.aspx"><img src="../MetroImages/ReasignaUnidades.png" width="120" height="120"   onMouseOver="MouseRollover(this,'ReasignaUnidades.png')" onMouseOut="MouseOut(this,'ReasignaUnidades.png')"/></a></td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: center">&nbsp;</td>
+      <td style="text-align: center"><a href="ReasignaUnidad.aspx"><img visible="false" src ="../MetroImages/ReasignaUnidades.png" width="120" height="120"   onMouseOver="MouseRollover(this,'ReasignaUnidades.png')" onMouseOut="MouseOut(this,'ReasignaUnidades.png')"/></a></td>
                
       </tr>
         <tr>
-            <td style="text-align: center"><a href="CambioCR.aspx"><img src="../MetroImages/CambiaUnidades.png" width="120" height="120"   onMouseOver="MouseRollover(this,'CambiaUnidades.png')" onMouseOut="MouseOut(this,'CambiaUnidades.png')"/></a></td>
+            <td style="text-align: center"><a href="CambioCR.aspx"><img visible="false" src="../MetroImages/CambiaUnidades.png" width="120" height="120"   onMouseOver="MouseRollover(this,'CambiaUnidades.png')" onMouseOut="MouseOut(this,'CambiaUnidades.png')"/></a></td>
             <td style="text-align: center"><a href="Cheques.aspx"><img src="../MetroImages/Cheques.png" width="120" height="120"   onMouseOver="MouseRollover(this,'Cheques.png')" onMouseOut="MouseOut(this,'Cheques.png')"/></a></td>
             <td style="text-align: center"><a href="Cablibracion.aspx"><img src="../MetroImages/Calibracion.png" width="120" height="120"   onMouseOver="MouseRollover(this,'Calibracion_over.png')" onMouseOut="MouseOut(this,'Calibracion.png')"/></a></td>
         </tr>
